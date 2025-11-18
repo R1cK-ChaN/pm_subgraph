@@ -3,9 +3,11 @@
 > **Project**: Custom Subgraph for Polymarket Historical Data Collection
 > **Network**: Polygon (Matic)
 > **Platform**: The Graph Network (Subgraph Studio)
-> **Version**: 1.3.0
+> **Version**: 1.4.0
 > **Implementation Status**: Deployed to Studio - Indexing in Progress
+> **Repository**: https://github.com/R1cK-ChaN/pm_subgraph
 > **Query Endpoint**: `https://api.studio.thegraph.com/query/117232/polymarket-subgraph/v1.0.0`
+> **CI/CD**: GitHub Actions - Build & Validate ✅
 
 ---
 

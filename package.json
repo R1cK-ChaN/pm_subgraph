@@ -4,7 +4,7 @@
   "description": "Custom subgraph for indexing Polymarket historical data on Polygon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/polymarket-subgraph"
+    "url": "https://github.com/R1cK-ChaN/pm_subgraph"
   },
   "scripts": {
     "codegen": "graph codegen",
