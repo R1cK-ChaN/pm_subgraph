@@ -39,3 +39,5 @@ temp/
 
 # Subgraph Studio
 .graph-cli/
+
+trouble_shooting/

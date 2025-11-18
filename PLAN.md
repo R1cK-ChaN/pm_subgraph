@@ -3,8 +3,9 @@
 > **Project**: Custom Subgraph for Polymarket Historical Data Collection
 > **Network**: Polygon (Matic)
 > **Platform**: The Graph Network (Subgraph Studio)
-> **Version**: 1.2.0
-> **Implementation Status**: Complete with Validation & Testing Suite
+> **Version**: 1.3.0
+> **Implementation Status**: Deployed to Studio - Indexing in Progress
+> **Query Endpoint**: `https://api.studio.thegraph.com/query/117232/polymarket-subgraph/v1.0.0`
 
 ---
 
@@ -1895,6 +1896,65 @@ curl -X POST \
 | NegRisk Exchange | 49,000,000 | ~16M | 2-4 days |
 
 **Total**: 3-14 days depending on event density and network conditions.
+
+### 9.4 Current Deployment
+
+**Deployed Version**: v1.0.0
+
+**Query Endpoint**:
+```
+https://api.studio.thegraph.com/query/117232/polymarket-subgraph/v1.0.0
+```
+
+**Check Sync Status**:
+```bash
+curl -s -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ _meta { block { number } hasIndexingErrors } globalStats(id: \"global\") { totalMarkets totalTrades totalUsers } }"}' \
+  https://api.studio.thegraph.com/query/117232/polymarket-subgraph/v1.0.0
+```
+
+### 9.5 Studio vs Published (Decentralized Network)
+
+#### Studio (Current Setup) - Recommended for Research
+
+| Feature | Studio | Published |
+|---------|--------|-----------|
+| **Cost** | Free | Requires GRT tokens |
+| **Hosting** | Free | Pay indexers |
+| **Queries** | Free & unlimited | Pay per query |
+| **Access** | Private (you only) | Public |
+| **Use Case** | Research, development | Production apps |
+
+#### What You Get Free in Studio
+
+- ✅ **Hosting**: The Graph hosts your subgraph
+- ✅ **Indexing**: They index all 50M+ Polygon blocks
+- ✅ **Storage**: All indexed data stored
+- ✅ **Queries**: Unlimited queries to your endpoint
+- ✅ **Dashboard**: Monitoring, logs, GraphQL playground
+
+#### When to Publish (Optional)
+
+Only publish to the decentralized network if you need:
+
+1. **Public API** - Others need to query your subgraph
+2. **Decentralization** - Don't want to rely on The Graph's infrastructure
+3. **Production App** - Building a dApp that needs reliable public endpoint
+
+**Publishing Costs**:
+- Curation signal: ~10,000 GRT upfront (to attract indexers)
+- Query fees: Small GRT amount per query
+
+#### Recommendation for Research
+
+**Stay in Studio** - It's free and provides everything needed for:
+- Event correlation analysis
+- User group identification
+- Trading pattern analysis
+- Historical data queries
+
+The Graph is essentially providing free infrastructure to index 50M+ blocks of Polymarket data for your research.
 
 ---
 
