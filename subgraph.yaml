@@ -1,0 +1,153 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+
+dataSources:
+  # ==========================================================================
+  # CONDITIONAL TOKENS CONTRACT (Main Market Contract)
+  # ==========================================================================
+  - kind: ethereum
+    name: ConditionalTokens
+    network: matic
+    source:
+      address: "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
+      abi: ConditionalTokens
+      startBlock: 16820000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.9
+      language: wasm/assemblyscript
+      entities:
+        - Market
+        - User
+        - Position
+        - Split
+        - Merge
+        - Redemption
+        - TokenRegistry
+        - GlobalStats
+        - DailyStats
+      abis:
+        - name: ConditionalTokens
+          file: ./abis/ConditionalTokens.json
+      eventHandlers:
+        # NOTE: Event signatures corrected based on verified ABIs
+        - event: ConditionPreparation(indexed bytes32,indexed address,indexed bytes32,uint256)
+          handler: handleConditionPreparation
+        - event: ConditionResolution(indexed bytes32,indexed address,indexed bytes32,uint256,uint256[])
+          handler: handleConditionResolution
+        - event: PositionSplit(indexed address,address,indexed bytes32,indexed bytes32,uint256[],uint256)
+          handler: handlePositionSplit
+        - event: PositionsMerge(indexed address,address,indexed bytes32,indexed bytes32,uint256[],uint256)
+          handler: handlePositionsMerge
+        - event: PayoutRedemption(indexed address,indexed address,indexed bytes32,bytes32,uint256[],uint256)
+          handler: handlePayoutRedemption
+        - event: TransferSingle(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: TransferBatch(indexed address,indexed address,indexed address,uint256[],uint256[])
+          handler: handleTransferBatch
+      file: ./src/mappings/ctf.ts
+
+  # ==========================================================================
+  # CTF EXCHANGE (Legacy - Binary Markets)
+  # ==========================================================================
+  - kind: ethereum
+    name: CTFExchange
+    network: matic
+    source:
+      address: "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E"
+      abi: CTFExchange
+      startBlock: 33100000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.9
+      language: wasm/assemblyscript
+      entities:
+        - Trade
+        - User
+        - Position
+        - Market
+        - MarketParticipation
+        - TokenRegistry
+        - GlobalStats
+        - DailyStats
+      abis:
+        - name: CTFExchange
+          file: ./abis/CTFExchange.json
+        - name: ConditionalTokens
+          file: ./abis/ConditionalTokens.json
+      eventHandlers:
+        - event: TokenRegistered(indexed uint256,indexed uint256,indexed bytes32)
+          handler: handleTokenRegistered
+        - event: OrderFilled(indexed bytes32,indexed address,indexed address,uint256,uint256,uint256,uint256,uint256)
+          handler: handleOrderFilled
+        # NOTE: OrdersMatched is NOT handled - it fires alongside OrderFilled and would cause duplicates
+      file: ./src/mappings/exchange.ts
+
+  # ==========================================================================
+  # CTF EXCHANGE (NegRisk - Multi-Outcome Markets)
+  # ==========================================================================
+  - kind: ethereum
+    name: NegRiskCTFExchange
+    network: matic
+    source:
+      address: "0xC5d563A36AE78145C45a50134d48A1215220f80a"
+      abi: CTFExchange
+      startBlock: 49000000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.9
+      language: wasm/assemblyscript
+      entities:
+        - Trade
+        - User
+        - Position
+        - Market
+        - MarketParticipation
+        - TokenRegistry
+        - GlobalStats
+        - DailyStats
+      abis:
+        - name: CTFExchange
+          file: ./abis/CTFExchange.json
+        - name: ConditionalTokens
+          file: ./abis/ConditionalTokens.json
+      eventHandlers:
+        - event: TokenRegistered(indexed uint256,indexed uint256,indexed bytes32)
+          handler: handleTokenRegisteredNegRisk
+        - event: OrderFilled(indexed bytes32,indexed address,indexed address,uint256,uint256,uint256,uint256,uint256)
+          handler: handleOrderFilledNegRisk
+        # NOTE: OrdersMatched is NOT handled - it fires alongside OrderFilled and would cause duplicates
+      file: ./src/mappings/negRiskExchange.ts
+
+  # ==========================================================================
+  # NEGRISK ADAPTER (Handles position conversions for multi-outcome)
+  # ==========================================================================
+  - kind: ethereum
+    name: NegRiskAdapter
+    network: matic
+    source:
+      address: "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296"
+      abi: NegRiskAdapter
+      startBlock: 49000000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.9
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - Position
+        - Market
+      abis:
+        - name: NegRiskAdapter
+          file: ./abis/NegRiskAdapter.json
+        - name: ConditionalTokens
+          file: ./abis/ConditionalTokens.json
+      eventHandlers:
+        - event: QuestionPrepared(indexed bytes32,indexed bytes32,uint256,bytes)
+          handler: handleQuestionPrepared
+        - event: PositionsConverted(indexed address,indexed bytes32,indexed uint256,uint256)
+          handler: handlePositionsConverted
+      file: ./src/mappings/negRiskAdapter.ts

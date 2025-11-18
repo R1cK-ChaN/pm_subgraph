@@ -1,0 +1,412 @@
+# schema.graphql
+# Polymarket Subgraph Schema v1.0.0
+
+# =============================================================================
+# TOKEN REGISTRY (CRITICAL - Maps tokenId to market/outcome)
+# =============================================================================
+
+type TokenRegistry @entity {
+  "Unique identifier - tokenId as hex string"
+  id: ID!
+
+  "The ERC-1155 token ID"
+  tokenId: BigInt!
+
+  "Reference to the market (conditionId)"
+  market: Market!
+
+  "Outcome index this token represents (0=No, 1=Yes)"
+  outcomeIndex: Int!
+
+  "Index set used in CTF (bitmask)"
+  indexSet: BigInt!
+
+  "Collateral token address"
+  collateral: Bytes!
+
+  "First transaction where this token was seen"
+  firstSeenTxHash: Bytes!
+
+  "First block where this token was seen"
+  firstSeenBlock: BigInt!
+
+  "Timestamp when first seen"
+  firstSeenTimestamp: BigInt!
+}
+
+# =============================================================================
+# MARKET ENTITY
+# =============================================================================
+
+type Market @entity {
+  "Unique identifier - conditionId from CTF contract"
+  id: ID!
+
+  "Question ID (bytes32) - NOT human-readable text"
+  questionId: Bytes!
+
+  "Oracle address responsible for resolution"
+  oracle: Bytes!
+
+  "Number of outcomes (2 for binary markets)"
+  outcomeSlotCount: Int!
+
+  "Block timestamp when market was created"
+  creationTimestamp: BigInt!
+
+  "Block number when market was created"
+  creationBlock: BigInt!
+
+  "Transaction hash of creation"
+  creationTxHash: Bytes!
+
+  "Whether market has been resolved"
+  resolved: Boolean!
+
+  "Block timestamp when market was resolved"
+  resolutionTimestamp: BigInt
+
+  "Block number when market was resolved"
+  resolutionBlock: BigInt
+
+  "Index of winning outcome (0 or 1 for binary; null if not resolved)"
+  winningOutcome: Int
+
+  "Raw payout numerators from resolution"
+  payoutNumerators: [BigInt!]
+
+  # Aggregated Statistics
+  "Total number of trades in this market"
+  tradeCount: Int!
+
+  "Total volume traded (in USDC wei)"
+  totalVolume: BigInt!
+
+  "Number of unique traders"
+  uniqueTraders: Int!
+
+  # Relationships
+  "All trades in this market"
+  trades: [Trade!]! @derivedFrom(field: "market")
+
+  "All user positions in this market"
+  positions: [Position!]! @derivedFrom(field: "market")
+
+  "Token registrations for this market"
+  tokens: [TokenRegistry!]! @derivedFrom(field: "market")
+}
+
+# =============================================================================
+# TRADE ENTITY
+# =============================================================================
+
+type Trade @entity {
+  "Unique identifier - txHash-logIndex"
+  id: ID!
+
+  "Reference to the market"
+  market: Market!
+
+  "Trader who executed the trade"
+  trader: User!
+
+  "Counterparty (maker if trader is taker)"
+  counterparty: User
+
+  "Token ID being traded"
+  tokenId: BigInt!
+
+  "Outcome index (0=No, 1=Yes for binary)"
+  outcomeIndex: Int!
+
+  "Trade side: BUY or SELL"
+  side: String!
+
+  "Amount of outcome tokens"
+  amount: BigInt!
+
+  "Price per token (USDC with 6 decimals)"
+  price: BigDecimal!
+
+  "Total cost/proceeds in USDC"
+  cost: BigInt!
+
+  "Fee paid (in USDC wei)"
+  fee: BigInt!
+
+  "Block timestamp"
+  timestamp: BigInt!
+
+  "Block number"
+  blockNumber: BigInt!
+
+  "Transaction hash"
+  transactionHash: Bytes!
+
+  "Log index within transaction"
+  logIndex: BigInt!
+
+  "Exchange contract used (legacy or negrisk)"
+  exchange: String!
+}
+
+# =============================================================================
+# USER ENTITY
+# =============================================================================
+
+type User @entity {
+  "Unique identifier - wallet address"
+  id: ID!
+
+  "Total number of trades"
+  tradeCount: Int!
+
+  "Total volume traded (USDC)"
+  totalVolume: BigInt!
+
+  "Total fees paid (USDC)"
+  totalFeesPaid: BigInt!
+
+  "Number of unique markets traded"
+  marketsTraded: Int!
+
+  "Timestamp of first trade"
+  firstTradeTimestamp: BigInt
+
+  "Timestamp of most recent trade"
+  lastTradeTimestamp: BigInt
+
+  "Block of first trade"
+  firstTradeBlock: BigInt
+
+  # Relationships
+  "All trades by this user"
+  trades: [Trade!]! @derivedFrom(field: "trader")
+
+  "All positions held by this user"
+  positions: [Position!]! @derivedFrom(field: "user")
+
+  "Markets this user has participated in"
+  marketParticipations: [MarketParticipation!]! @derivedFrom(field: "user")
+
+  "All redemptions by this user"
+  redemptions: [Redemption!]! @derivedFrom(field: "redeemer")
+}
+
+# =============================================================================
+# POSITION ENTITY
+# =============================================================================
+
+type Position @entity {
+  "Unique identifier - user-market-tokenId"
+  id: ID!
+
+  "User who holds this position"
+  user: User!
+
+  "Market this position is in"
+  market: Market!
+
+  "Token ID for this position"
+  tokenId: BigInt!
+
+  "Outcome index (0=No, 1=Yes)"
+  outcomeIndex: Int!
+
+  "Current balance of tokens"
+  balance: BigInt!
+
+  "Total tokens bought"
+  totalBought: BigInt!
+
+  "Total tokens sold"
+  totalSold: BigInt!
+
+  "Average buy price"
+  avgBuyPrice: BigDecimal!
+
+  "Average sell price"
+  avgSellPrice: BigDecimal!
+
+  "Realized PnL from closed positions"
+  realizedPnL: BigDecimal!
+
+  "Number of trades in this position"
+  tradeCount: Int!
+
+  "Last updated timestamp"
+  lastUpdated: BigInt!
+}
+
+# =============================================================================
+# MARKET PARTICIPATION (Junction Entity)
+# =============================================================================
+
+type MarketParticipation @entity {
+  "Unique identifier - user-market"
+  id: ID!
+
+  "User participating"
+  user: User!
+
+  "Market participated in"
+  market: Market!
+
+  "Number of trades in this market"
+  tradeCount: Int!
+
+  "Volume in this market"
+  volume: BigInt!
+
+  "First trade timestamp"
+  firstTradeTimestamp: BigInt!
+
+  "Last trade timestamp"
+  lastTradeTimestamp: BigInt!
+}
+
+# =============================================================================
+# SPLIT/MERGE EVENTS
+# =============================================================================
+
+type Split @entity {
+  "Unique identifier - txHash-logIndex"
+  id: ID!
+
+  "User who split"
+  stakeholder: User!
+
+  "Market (condition)"
+  market: Market!
+
+  "Amount of collateral split"
+  amount: BigInt!
+
+  "Block timestamp"
+  timestamp: BigInt!
+
+  "Block number"
+  blockNumber: BigInt!
+
+  "Transaction hash"
+  transactionHash: Bytes!
+}
+
+type Merge @entity {
+  "Unique identifier - txHash-logIndex"
+  id: ID!
+
+  "User who merged"
+  stakeholder: User!
+
+  "Market (condition)"
+  market: Market!
+
+  "Amount of collateral received"
+  amount: BigInt!
+
+  "Block timestamp"
+  timestamp: BigInt!
+
+  "Block number"
+  blockNumber: BigInt!
+
+  "Transaction hash"
+  transactionHash: Bytes!
+}
+
+# =============================================================================
+# REDEMPTION (PayoutRedemption - post-resolution cash-out)
+# =============================================================================
+
+type Redemption @entity {
+  "Unique identifier - txHash-logIndex"
+  id: ID!
+
+  "User who redeemed"
+  redeemer: User!
+
+  "Market (condition)"
+  market: Market!
+
+  "Index sets redeemed"
+  indexSets: [BigInt!]!
+
+  "Payout amount received (USDC)"
+  payout: BigInt!
+
+  "Block timestamp"
+  timestamp: BigInt!
+
+  "Block number"
+  blockNumber: BigInt!
+
+  "Transaction hash"
+  transactionHash: Bytes!
+}
+
+# =============================================================================
+# GLOBAL STATISTICS
+# =============================================================================
+
+type GlobalStats @entity {
+  "Singleton ID: 'global'"
+  id: ID!
+
+  "Total number of markets created"
+  totalMarkets: Int!
+
+  "Total number of resolved markets"
+  resolvedMarkets: Int!
+
+  "Total number of trades"
+  totalTrades: Int!
+
+  "Total volume (USDC)"
+  totalVolume: BigInt!
+
+  "Total fees collected"
+  totalFees: BigInt!
+
+  "Total unique users"
+  totalUsers: Int!
+
+  "Last updated block"
+  lastUpdatedBlock: BigInt!
+
+  "Last updated timestamp"
+  lastUpdatedTimestamp: BigInt!
+}
+
+# =============================================================================
+# DAILY STATISTICS (Time Series)
+# =============================================================================
+
+type DailyStats @entity {
+  "Unique identifier - date (YYYY-MM-DD)"
+  id: ID!
+
+  "Unix timestamp for start of day"
+  dayTimestamp: BigInt!
+
+  "Number of new markets"
+  newMarkets: Int!
+
+  "Number of resolved markets"
+  resolvedMarkets: Int!
+
+  "Number of trades"
+  tradeCount: Int!
+
+  "Daily volume (USDC)"
+  volume: BigInt!
+
+  "Daily fees"
+  fees: BigInt!
+
+  "New users"
+  newUsers: Int!
+
+  "Active users (traded today)"
+  activeUsers: Int!
+}
