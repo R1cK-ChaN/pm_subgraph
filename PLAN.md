@@ -3,7 +3,8 @@
 > **Project**: Custom Subgraph for Polymarket Historical Data Collection
 > **Network**: Polygon (Matic)
 > **Platform**: The Graph Network (Subgraph Studio)
-> **Version**: 1.0.0
+> **Version**: 1.2.0
+> **Implementation Status**: Complete with Validation & Testing Suite
 
 ---
 
@@ -25,6 +26,7 @@
 14. [Troubleshooting](#14-troubleshooting)
 15. [References](#15-references)
 16. [Implementation Notes](#16-implementation-notes)
+17. [Validation & Testing Suite](#17-validation--testing-suite)
 
 ---
 
@@ -3131,26 +3133,222 @@ polymarket-subgraph/
 ├── package.json
 ├── schema.graphql
 ├── subgraph.yaml
+├── tsconfig.json
+├── .github/
+│   └── workflows/
+│       └── test.yml
 ├── abis/
 │   ├── ConditionalTokens.json
 │   ├── CTFExchange.json
 │   └── NegRiskAdapter.json
-└── src/
-    ├── mappings/
-    │   ├── ctf.ts
-    │   ├── exchange.ts
-    │   ├── negRiskExchange.ts
-    │   └── negRiskAdapter.ts
-    └── utils/
-        ├── constants.ts
-        ├── helpers.ts
-        ├── pricing.ts
-        └── tokenRegistry.ts
+├── src/
+│   ├── mappings/
+│   │   ├── ctf.ts
+│   │   ├── exchange.ts
+│   │   ├── negRiskExchange.ts
+│   │   └── negRiskAdapter.ts
+│   └── utils/
+│       ├── constants.ts
+│       ├── helpers.ts
+│       ├── pricing.ts
+│       └── tokenRegistry.ts
+├── tests/
+│   ├── ctf.test.ts
+│   ├── exchange.test.ts
+│   └── utils/
+│       └── helpers.ts
+└── scripts/
+    ├── validate-counts.ts
+    ├── validate-trades.ts
+    ├── validate-gamma.ts
+    ├── validate-all.ts
+    └── smoke-queries.graphql
 ```
 
 ---
 
-**Document Version**: 1.1.0
+## 17. Validation & Testing Suite
+
+This section documents the comprehensive validation and testing infrastructure implemented to ensure data correctness and reliability.
+
+### 17.1 Implementation Fixes Applied
+
+During validation planning, several gaps were identified and fixed:
+
+#### Position PnL Tracking
+The original implementation did not track PnL metrics. Now both `exchange.ts` and `negRiskExchange.ts` update:
+- `totalBought` / `totalSold` - cumulative amounts
+- `avgBuyPrice` / `avgSellPrice` - VWAP calculations
+- `realizedPnL` - calculated on each sell
+
+#### Daily User Stats
+Added proper tracking for `DailyStats`:
+- `newUsers` - incremented when a user is first created
+- `activeUsers` - incremented on user's first trade of each day
+
+### 17.2 Matchstick Unit Tests
+
+Unit tests using The Graph's Matchstick framework (requires Docker):
+
+```bash
+npm run test
+```
+
+#### Test Files
+
+**`tests/ctf.test.ts`** - CTF handler tests:
+- ConditionPreparation creates Market, updates GlobalStats
+- ConditionResolution sets winner via argmax(payoutNumerators)
+- PositionSplit/Merge creates entities
+- TransferSingle handles mint/burn (zero address)
+- Invariant: winningOutcome == argmax
+
+**`tests/exchange.test.ts`** - Exchange handler tests:
+- TokenRegistered creates both token0/token1 registries
+- OrderFilled creates Trade, updates User/Market stats
+- Proper BUY/SELL side determination
+- Position PnL updates
+- No duplicate trades
+- Invariant: both tokens map to same market
+
+### 17.3 Validation Scripts
+
+Run validations against a deployed subgraph:
+
+```bash
+# Individual validations
+npm run validate:counts <subgraph-endpoint>
+npm run validate:trades <subgraph-endpoint>
+npm run validate:gamma <subgraph-endpoint>
+
+# All validations
+npm run validate:all <subgraph-endpoint>
+```
+
+#### Count Validation (`validate-counts.ts`)
+- Checks GlobalStats sanity (markets > 0, trades > 0, users > 0)
+- Verifies resolved <= total markets
+
+#### Trade Validation (`validate-trades.ts`)
+- **Price bounds**: All prices in [0, 1]
+- **No duplicates**: Unique (txHash, logIndex) pairs
+- **Required fields**: Valid side (BUY/SELL), exchange (legacy/negrisk)
+- **Consistency**: price ≈ cost/amount
+
+#### Gamma API Validation (`validate-gamma.ts`)
+- **Market presence**: Subgraph has Gamma's condition_ids
+- **Question IDs match**: bytes32 values align
+- **Token coverage**: Gamma tokens have token_ids
+
+### 17.4 Quality Gates
+
+| Check | Threshold | Script |
+|-------|-----------|--------|
+| Build succeeds | No errors | `npm run build` |
+| Matchstick tests | 100% pass | `npm run test` |
+| Event parity | ±0.1% | `validate:counts` |
+| Price bounds | All [0, 1] | `validate:trades` |
+| No duplicate trades | Zero | `validate:trades` |
+| Gamma alignment | >99% | `validate:gamma` |
+
+### 17.5 Smoke Queries
+
+Located in `scripts/smoke-queries.graphql` - 10 queries to verify basic functionality:
+
+1. **IndexHealth** - `_meta` block and errors
+2. **GlobalStats** - Platform totals
+3. **RecentMarkets** - Latest market creations
+4. **RecentTrades** - Latest trades
+5. **TopUsers** - Highest volume users
+6. **ActivePositions** - Non-zero balances
+7. **ResolvedMarkets** - Settlement data
+8. **DailyStats** - Time series
+9. **TokenRegistry** - Token mappings
+10. **MarketParticipation** - User-market junction
+
+### 17.6 CI/CD Integration
+
+GitHub Actions workflow (`.github/workflows/test.yml`):
+
+```yaml
+jobs:
+  build:
+    - npm ci
+    - npm run codegen
+    - npm run build
+
+  test:
+    - npm run test (Matchstick with Docker)
+
+  validate:
+    - npm run validate:all $SUBGRAPH_ENDPOINT
+    # Requires SUBGRAPH_ENDPOINT secret
+```
+
+### 17.7 Running Validations
+
+#### Prerequisites
+```bash
+npm install  # Install ts-node, node-fetch, etc.
+```
+
+#### After Deployment
+```bash
+# Wait for initial sync
+# Check Studio dashboard for progress
+
+# Once synced, run validations
+npm run validate:all https://api.studio.thegraph.com/query/.../polymarket-subgraph/v0.0.1
+
+# Or individual checks
+npm run validate:trades https://api.studio.thegraph.com/query/.../polymarket-subgraph/v0.0.1
+```
+
+#### Local Development
+```bash
+# Start local Graph Node
+cd docker && docker-compose up -d
+
+# Deploy with recent startBlocks for quick testing
+# (modify subgraph.yaml startBlock values)
+npm run deploy-local
+
+# Run smoke queries at http://localhost:8000/subgraphs/name/polymarket-subgraph
+```
+
+### 17.8 Validation Results Interpretation
+
+**Pass example:**
+```
+✅ PASS: Price bounds [0, 1]
+  All 10000 trades have valid prices
+
+✅ PASS: No duplicate trades
+  All 10000 trades have unique identifiers
+```
+
+**Fail example:**
+```
+❌ FAIL: Price bounds [0, 1]
+  Found 3 trades with invalid prices
+  Samples:
+    - 0x123...-5: price=1.5
+    - 0x456...-2: price=-0.1
+```
+
+### 17.9 Troubleshooting Validation Issues
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| "No trades found" | Subgraph still syncing | Wait for sync to complete |
+| Price out of bounds | Incorrect USDC scaling | Check `calculatePrice()` in pricing.ts |
+| Duplicate trades | Handler called twice | Verify only OrderFilled creates trades |
+| Gamma mismatch | Different data sources | Some markets may not be in Gamma API |
+| Balance mismatch | Missing transfers | Ensure mint/burn (zero address) handled |
+
+---
+
+**Document Version**: 1.2.0
 **Last Updated**: November 2025
 **Author**: Polymarket Subgraph Team
-**Implementation Status**: Complete - Build Successful
+**Implementation Status**: Complete with Validation & Testing Suite

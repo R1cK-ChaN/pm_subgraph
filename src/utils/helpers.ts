@@ -20,7 +20,7 @@ import {
 // USER HELPERS
 // =============================================================================
 
-export function getOrCreateUser(address: Address): User {
+export function getOrCreateUser(address: Address, timestamp: BigInt | null = null): User {
   let id = address.toHexString();
   let user = User.load(id);
 
@@ -39,9 +39,39 @@ export function getOrCreateUser(address: Address): User {
     let stats = getOrCreateGlobalStats();
     stats.totalUsers = stats.totalUsers + 1;
     stats.save();
+
+    // Update daily stats for new user
+    if (timestamp) {
+      let dailyStats = getOrCreateDailyStats(timestamp);
+      dailyStats.newUsers = dailyStats.newUsers + 1;
+      dailyStats.save();
+    }
   }
 
   return user;
+}
+
+// Track daily active users - call before updating lastTradeTimestamp
+export function trackDailyActiveUser(user: User, currentTimestamp: BigInt): void {
+  let currentDay = currentTimestamp.div(SECONDS_PER_DAY);
+
+  // Check if this is user's first trade today
+  let isFirstTradeToday = true;
+
+  let lastTimestamp = user.lastTradeTimestamp;
+  if (lastTimestamp !== null) {
+    let lastDay = lastTimestamp.div(SECONDS_PER_DAY);
+    if (lastDay.equals(currentDay)) {
+      isFirstTradeToday = false;
+    }
+  }
+
+  // Increment activeUsers if this is user's first trade of the day
+  if (isFirstTradeToday) {
+    let dailyStats = getOrCreateDailyStats(currentTimestamp);
+    dailyStats.activeUsers = dailyStats.activeUsers + 1;
+    dailyStats.save();
+  }
 }
 
 // =============================================================================

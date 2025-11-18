@@ -14,13 +14,22 @@
     "create-local": "graph create --node http://localhost:8020/ polymarket-subgraph",
     "remove-local": "graph remove --node http://localhost:8020/ polymarket-subgraph",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 polymarket-subgraph",
-    "test": "graph test"
+    "test": "graph test",
+    "validate:counts": "ts-node scripts/validate-counts.ts",
+    "validate:trades": "ts-node scripts/validate-trades.ts",
+    "validate:gamma": "ts-node scripts/validate-gamma.ts",
+    "validate:all": "ts-node scripts/validate-all.ts"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.71.0",
     "@graphprotocol/graph-ts": "^0.32.0"
   },
   "devDependencies": {
-    "matchstick-as": "^0.6.0"
+    "matchstick-as": "^0.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0",
+    "node-fetch": "^2.7.0",
+    "@types/node-fetch": "^2.6.9"
   }
 }

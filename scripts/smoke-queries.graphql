@@ -1,0 +1,224 @@
+# Smoke Queries for Polymarket Subgraph Validation
+# Run these queries to verify basic functionality after deployment
+
+# =============================================================================
+# S1: Indexing Health Check
+# =============================================================================
+query IndexHealth {
+  _meta {
+    block {
+      number
+      hash
+    }
+    deployment
+    hasIndexingErrors
+  }
+}
+
+# =============================================================================
+# S2: Global Statistics
+# =============================================================================
+query GlobalStats {
+  globalStats(id: "global") {
+    totalMarkets
+    resolvedMarkets
+    totalTrades
+    totalVolume
+    totalFees
+    totalUsers
+    lastUpdatedBlock
+    lastUpdatedTimestamp
+  }
+}
+
+# =============================================================================
+# S3: Recent Markets
+# =============================================================================
+query RecentMarkets {
+  markets(
+    first: 10
+    orderBy: creationTimestamp
+    orderDirection: desc
+  ) {
+    id
+    questionId
+    oracle
+    outcomeSlotCount
+    creationTimestamp
+    creationBlock
+    resolved
+    winningOutcome
+    tradeCount
+    totalVolume
+    uniqueTraders
+  }
+}
+
+# =============================================================================
+# S4: Recent Trades
+# =============================================================================
+query RecentTrades {
+  trades(
+    first: 10
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market {
+      id
+    }
+    trader {
+      id
+    }
+    counterparty {
+      id
+    }
+    tokenId
+    outcomeIndex
+    side
+    amount
+    price
+    cost
+    fee
+    timestamp
+    blockNumber
+    transactionHash
+    exchange
+  }
+}
+
+# =============================================================================
+# S5: Top Users by Volume
+# =============================================================================
+query TopUsers {
+  users(
+    first: 10
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
+
+# =============================================================================
+# S6: Positions with Balance
+# =============================================================================
+query ActivePositions {
+  positions(
+    first: 10
+    where: { balance_gt: "0" }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    user {
+      id
+    }
+    market {
+      id
+    }
+    tokenId
+    outcomeIndex
+    balance
+    totalBought
+    totalSold
+    avgBuyPrice
+    avgSellPrice
+    realizedPnL
+    tradeCount
+    lastUpdated
+  }
+}
+
+# =============================================================================
+# S7: Resolved Markets
+# =============================================================================
+query ResolvedMarkets {
+  markets(
+    first: 10
+    where: { resolved: true }
+    orderBy: resolutionTimestamp
+    orderDirection: desc
+  ) {
+    id
+    resolved
+    resolutionTimestamp
+    resolutionBlock
+    winningOutcome
+    payoutNumerators
+    tradeCount
+    totalVolume
+  }
+}
+
+# =============================================================================
+# S8: Daily Statistics
+# =============================================================================
+query DailyStats {
+  dailyStats(
+    first: 7
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    newMarkets
+    resolvedMarkets
+    tradeCount
+    volume
+    fees
+    newUsers
+    activeUsers
+  }
+}
+
+# =============================================================================
+# S9: Token Registry
+# =============================================================================
+query TokenRegistry {
+  tokenRegistries(
+    first: 10
+    orderBy: firstSeenBlock
+    orderDirection: desc
+  ) {
+    id
+    tokenId
+    market {
+      id
+    }
+    outcomeIndex
+    indexSet
+    collateral
+    firstSeenBlock
+    firstSeenTimestamp
+  }
+}
+
+# =============================================================================
+# S10: Market Participation
+# =============================================================================
+query MarketParticipation {
+  marketParticipations(
+    first: 10
+    orderBy: volume
+    orderDirection: desc
+  ) {
+    id
+    user {
+      id
+    }
+    market {
+      id
+    }
+    tradeCount
+    volume
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
