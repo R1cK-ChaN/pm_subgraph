@@ -1,0 +1,80 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{booktabs} 
+\usepackage{multirow}
+\usepackage{graphicx} 
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usepackage{subcaption} 
+\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+\newcommand{\ms}[2]{{#1\tiny{$\pm$#2}}}
+\newcommand{\boldms}[2]{\textbf{#1} \scriptsize{$\pm$ #2}}
+
+\usetheme{Malmoe}
+\definecolor{nus-orange}{RGB}{239,124,0} 
+\definecolor{nus-white}{RGB}{255,255,255}
+\definecolor{nus-blue}{RGB}{0,61,124}
+\definecolor{nus-black}{RGB}{0,0,0}
+
+\setbeamercolor{section in head/foot}{bg=nus-blue, fg=nus-white}
+\setbeamercolor{subsection in head/foot}{bg=nus-blue, fg=nus-white}
+\setbeamercolor{frametitle}{bg=nus-blue, fg=nus-white}
+\setbeamercolor{title}{bg=nus-blue, fg=nus-white}
+\setbeamercolor{alerted text}{fg=nus-blue}
+\setbeamercolor{block title}{fg=nus-blue}
+\setbeamercolor{block body}{fg=nus-black}
+
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{theorems}[sections]
+\setbeamertemplate{propositions}[numbered]
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true, shadow=true]
+
+\title{Polymarket Historical Data Collection Strategy}
+\subtitle{Building Custom Subgraph Infrastructure for Blockchain Prediction Markets}
+\author{Presenter: Zhikun Chen}
+\date{\today}
+\titlegraphic{
+   \includegraphics[width=2cm]{nus-logo}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Problem Definition}
+\input{sections/Problem}
+
+\section{Data Architecture}
+\input{sections/Reality}
+
+\section{Solution Analysis}
+\input{sections/Cost_Benefit_analysis}
+
+\section{Our Approach}
+\input{sections/Custom_Subgraph}
+
+\section{Infrastructure Details}
+\input{sections/infrastructure_details}
+
+\section{Implementation}
+\input{sections/implementation_plan}
+
+\section{Current Status}
+\input{sections/expectation_timeline}
+
+\end{document}

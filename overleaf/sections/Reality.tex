@@ -1,0 +1,54 @@
+\begin{frame}{Reality: Core Data Lives On-chain (Polygon)}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{block}{On-chain Data (Polygon PoS)}
+                \begin{itemize}
+\textcolor{green}{\checkmark} Executed trades (fills)\\
+\textcolor{green}{\checkmark} Position lifecycles\\\textcolor{green}{\checkmark} Market resolutions\\
+\textcolor{green}{\checkmark} Wallet interactions\\
+\textcolor{green}{\checkmark} USDC settlements\\
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Off-chain Data}
+                \begin{itemize}
+\textcolor{red}{\texttimes} Order book depth\\
+\textcolor{red}{\texttimes} Cancelled orders\\
+\textcolor{red}{\texttimes} Market metadata\\
+\textcolor{red}{\texttimes} Bid-ask spreads\\
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.3cm}
+    
+    \begin{block}{Data Integration Architecture}
+        \centering
+        \begin{tikzpicture}[scale=1,
+            box/.style={rectangle, draw, text width=2.8cm, text centered, minimum height=0.6cm, font=\tiny},
+            databox/.style={box, fill=blue!20},
+            apibox/.style={box, fill=green!20},
+            resultbox/.style={box, fill=orange!20},
+            arrow/.style={->, thick}
+        ]
+            % On-chain data box
+            \node[databox] (onchain) at (-1,0) {On-chain (Subgraph)\\conditionId: \texttt{0x3f2a...}\\tokenId, amount, timestamp};
+            
+            % Gamma API box
+            \node[apibox] (api) at (6,0) {Gamma API\\conditionId: \texttt{0x3f2a...}\\market name, outcomes, category};
+            
+            % Join arrow with label
+            \draw[line] (onchain) -- (2.5,0);
+            \draw[line] (api) -- (2.5,0);
+            \node at (2.5,0.5) {\tiny\textbf{JOIN ON}};
+            \node at (2.5,0.2) {\tiny\texttt{conditionId}};
+            
+            % Result box
+            \node[resultbox] (result) at (2.5,-2) {Complete Dataset\\Trade + Market Info};
+            \draw[arrow] (2.5,-0.2) -- (result);
+        \end{tikzpicture}
+    \end{block}
+\end{frame}

@@ -1,0 +1,191 @@
+\begin{frame}{Subgraph Architecture: Data Sources}
+    \begin{block}{Smart Contracts Indexed (Polygon)}
+        \begin{table}[h]
+            \centering
+            \resizebox{\textwidth}{!}{%
+            \begin{tabular}{|l|l|c|l|}
+                \hline
+                \textbf{Contract} & \textbf{Address} & \textbf{Start Block} & \textbf{Purpose} \\
+                \hline
+                \hline
+                CTF (Gnosis) & \texttt{0x4D97...6045} & 16,820,000 & Market creation \& resolution \\
+                \hline
+                CLOB Exchange & \texttt{0x4bFb...982E} & 33,100,000 & Order matching \& trades \\
+                \hline
+                NegRisk Exchange & \texttt{0xC5d5...f80a} & 49,000,000 & Multi-outcome markets \\
+                \hline
+                NegRisk Adapter & \texttt{0xd91E...5296} & 49,000,000 & Position conversions \\
+                \hline
+            \end{tabular}
+            }
+        \end{table}
+    \end{block}
+
+    \begin{block}{Key Events Captured}
+        \begin{columns}[T]
+            \begin{column}{0.5\textwidth}
+                \small
+                \textbf{CTF Contract}
+                \begin{itemize}
+                    \item[\tiny$\bullet$] ConditionPreparation
+                    \item[\tiny$\bullet$] ConditionResolution
+                    \item[\tiny$\bullet$] PositionSplit / Merge
+                    \item[\tiny$\bullet$] TransferSingle / Batch
+                \end{itemize}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \small
+                \textbf{Exchange Contracts}
+                \begin{itemize}
+                    \item[\tiny$\bullet$] TokenRegistered
+                    \item[\tiny$\bullet$] OrderFilled
+                    \item[\tiny$\bullet$] QuestionPrepared
+                    \item[\tiny$\bullet$] PositionsConverted
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Subgraph Architecture: Entity Schema}
+    \begin{block}{11 GraphQL Entities}
+        \begin{columns}[T]
+            \begin{column}{0.33\textwidth}
+                \small
+                \textbf{Core Entities}
+                \begin{itemize}
+                    \item[\tiny$\bullet$] Market
+                    \item[\tiny$\bullet$] Trade
+                    \item[\tiny$\bullet$] User
+                    \item[\tiny$\bullet$] Position
+                \end{itemize}
+            \end{column}
+            \begin{column}{0.33\textwidth}
+                \small
+                \textbf{Analytics}
+                \begin{itemize}
+                    \item[\tiny$\bullet$] GlobalStats
+                    \item[\tiny$\bullet$] DailyStats
+                    \item[\tiny$\bullet$] TokenRegistry
+                    \item[\tiny$\bullet$] Participation
+                \end{itemize}
+            \end{column}
+            \begin{column}{0.33\textwidth}
+                \small
+                \textbf{Events}
+                \begin{itemize}
+                    \item[\tiny$\bullet$] Split
+                    \item[\tiny$\bullet$] Merge
+                    \item[\tiny$\bullet$] Redemption
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{block}
+
+    \vspace{0.2cm}
+
+    \begin{block}{Critical Design Decisions}
+        \begin{itemize}
+            \item \textbf{TokenRegistry} as source of truth for \texttt{tokenId} $\rightarrow$ \texttt{conditionId} mapping
+            \item \textbf{Transfers} (not trades) update position balances to avoid double-counting
+            \item \textbf{OrderFilled only} for trade records (skip OrdersMatched to prevent duplicates)
+            \item \textbf{Include mint/burn} transfers (zero address) for correct balance tracking
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Subgraph Architecture: Advanced Features}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Position PnL Tracking}
+                \footnotesize
+                VWAP-based calculation:
+                \begin{itemize}
+                    \item[\tiny$\bullet$] \texttt{avgBuyPrice}
+                    \item[\tiny$\bullet$] \texttt{avgSellPrice}
+                    \item[\tiny$\bullet$] \texttt{realizedPnL}
+                    \item[\tiny$\bullet$] \texttt{totalBought/Sold}
+                \end{itemize}
+            \end{block}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Daily Statistics}
+                \footnotesize
+                Time-series aggregations:
+                \begin{itemize}
+                    \item[\tiny$\bullet$] \texttt{newMarkets}
+                    \item[\tiny$\bullet$] \texttt{tradeCount}
+                    \item[\tiny$\bullet$] \texttt{volume}
+                    \item[\tiny$\bullet$] \texttt{newUsers/activeUsers}
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+
+    \vspace{0.2cm}
+
+    \begin{block}{Trade Direction Logic}
+        \footnotesize
+        Determine BUY/SELL by checking if \texttt{makerAssetId} is in TokenRegistry:
+        \begin{itemize}
+            \item[\tiny$\bullet$] Maker asset is CTF token $\rightarrow$ Taker is \textbf{buying}
+            \item[\tiny$\bullet$] Maker asset is USDC $\rightarrow$ Taker is \textbf{selling}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Subgraph Architecture: Quality Assurance}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Unit Tests (Matchstick)}
+                \small
+                \begin{itemize}
+                    \item CTF handler tests
+                        \begin{itemize}
+                            \item[\tiny-] ConditionPreparation
+                            \item[\tiny-] ConditionResolution
+                            \item[\tiny-] Winner derivation
+                        \end{itemize}
+                    \item Exchange handler tests
+                        \begin{itemize}
+                            \item[\tiny-] TokenRegistered
+                            \item[\tiny-] OrderFilled (BUY/SELL)
+                            \item[\tiny-] Position PnL updates
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Validation Scripts}
+                \small
+                \begin{itemize}
+                    \item \texttt{validate-counts}
+                        \begin{itemize}
+                            \item[\tiny-] GlobalStats sanity
+                        \end{itemize}
+                    \item \texttt{validate-trades}
+                        \begin{itemize}
+                            \item[\tiny-] Price bounds [0,1]
+                            \item[\tiny-] No duplicates
+                            \item[\tiny-] Required fields
+                        \end{itemize}
+                    \item \texttt{validate-gamma}
+                        \begin{itemize}
+                            \item[\tiny-] Gamma API alignment
+                            \item[\tiny-] Token mapping check
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        </column>
+    \end{columns}
+
+    \vspace{0.3cm}
+
+    \begin{exampleblock}{CI/CD Pipeline}
+        \centering
+        \small
+        GitHub Actions: \texttt{npm run codegen} $\rightarrow$ \texttt{npm run build} $\rightarrow$ \texttt{npm run test}
+    \end{exampleblock}
+\end{frame}

@@ -1,0 +1,58 @@
+\begin{frame}{Implementation Progress}
+    \begin{center}
+    \begin{tikzpicture}[
+        scale=0.7,
+        node distance=1.2cm,
+        phase/.style={rectangle, draw=blue!50, fill=blue!20, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\scriptsize\bfseries},
+        done/.style={rectangle, draw=green!50, fill=green!20, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\scriptsize\bfseries},
+        active/.style={rectangle, draw=orange!50, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\scriptsize\bfseries},
+        task/.style={rectangle, draw=gray!50, fill=gray!10, text width=2.5cm, text centered, font=\tiny, minimum height=0.5cm},
+        arrow/.style={->, >=stealth, thick, draw=blue!50},
+        timeline/.style={font=\tiny\itshape, text=blue!70}
+    ]
+
+        % Phase 1 - DONE
+        \node[done] (p1) at (0,0) {Phase 1\\Schema Design};
+        \node[timeline, above=0.2cm of p1] {\textcolor{green}{\checkmark} Complete};
+
+        % Phase 2 - DONE
+        \node[done] (p2) at (4,0) {Phase 2\\Mapping Dev};
+        \node[timeline, above=0.2cm of p2] {\textcolor{green}{\checkmark} Complete};
+
+        % Phase 3 - DONE
+        \node[done] (p3) at (0,-3) {Phase 3\\Testing Suite};
+        \node[timeline, left=0.2cm of p3] {\textcolor{green}{\checkmark} Complete};
+
+        % Phase 4 - DONE
+        \node[done] (p4) at (4,-3) {Phase 4\\Deployment};
+        \node[timeline, right=0.2cm of p4] {\textcolor{green}{\checkmark} Complete};
+
+        % Phase 5 - ACTIVE
+        \node[active] (p5) at (2,-6) {Phase 5\\Indexing};
+        \node[timeline, left=0.2cm of p5] {\textcolor{orange}{In Progress}};
+
+        % Task boxes with actual deliverables
+        \node[task] (t1) at (-2,-1.3) {11 entities defined\\TokenRegistry, PnL};
+        \node[task] (t2) at (6,-1.3) {4 contracts indexed\\CTF, Exchange, NegRisk};
+        \node[task] (t3) at (-2,-4.5) {Matchstick tests\\Validation scripts};
+        \node[task] (t4) at (6,-4.5) {Studio v1.0.0\\GitHub Actions CI};
+        \node[task] (t5) at (2,-7.3) {Syncing 50M+ blocks\\3-14 days remaining};
+
+        % Arrows between phases
+        \draw[arrow] (p1) -- (p2);
+        \draw[arrow] (p1) -- (p3);
+        \draw[arrow] (p2) -- (p4);
+        \draw[arrow] (p3) -- (p5);
+        \draw[arrow] (p4) -- (p5);
+
+    \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.1cm}
+
+    \begin{block}{Technology Stack}
+        \centering
+        \footnotesize
+        \texttt{AssemblyScript} $\bullet$ \texttt{GraphQL} $\bullet$ \texttt{The Graph Studio} $\bullet$ \texttt{GitHub Actions}
+    \end{block}
+\end{frame}

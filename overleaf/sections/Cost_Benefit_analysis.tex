@@ -1,0 +1,65 @@
+\begin{frame}{Three Approaches to Access On-chain Data}
+    \begin{table}[h]
+        \centering
+        \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|c|c|c|c|c|}
+            \hline
+            \textbf{Method} & \textbf{Setup Complexity} & \textbf{Storage Needs} & \textbf{Customization} & \textbf{Dev Time} & \textbf{Maintenance} \\
+            \hline
+            \hline
+            \begin{tabular}[l]{@{}l@{}}Own Polygon\\Archive Node\end{tabular} 
+                & \textcolor{red}{High} & 3-5 TB & \textcolor{green}{Full} & 2-3 weeks & \textcolor{red}{Daily} \\
+            \hline
+            \begin{tabular}[l]{@{}l@{}}Existing\\Subgraph\end{tabular} 
+                & \textcolor{green}{None} & None & \textcolor{red}{None} & \textcolor{green}{Immediate} & \textcolor{green}{None} \\
+            \hline
+            \begin{tabular}[l]{@{}l@{}}Custom\\Subgraph\end{tabular} 
+                & Medium & $<$ 100 GB& \textcolor{green}{High} & 3-5 days & Weekly \\
+            \hline
+        \end{tabular}
+        }
+    \end{table}
+    
+    \vspace{0.5cm}
+    
+    \begin{columns}[T]
+        \begin{column}{0.33\textwidth}
+            \begin{exampleblock}{Archive Node}
+                \small{
+                \begin{itemize}
+                    \item[+] Direct chain access
+                    \item[-] Complex state sync
+                    \item[-] Handle reorgs manually
+                    \item[-] 24/7 monitoring
+                \end{itemize}
+                }
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \begin{exampleblock}{Existing Subgraph}
+                \small{
+                \begin{itemize}
+                    \item[+] Zero engineering
+                    \item[-] Black box logic
+                    \item[-] Cannot modify schema
+                    \item[-] Missing custom metrics
+                \end{itemize}
+                }
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \begin{exampleblock}{Custom Subgraph}
+                \small{
+                \begin{itemize}
+                    \item[+] Tailored analytics
+                    \item[+] Version control
+                    \item[+] Automated indexing
+                    \item[+] Built-in resilience
+                \end{itemize}
+                }
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
