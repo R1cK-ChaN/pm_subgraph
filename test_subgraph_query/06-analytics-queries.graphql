@@ -1,0 +1,333 @@
+# ==============================================================================
+# 06 - Analytics Queries
+# ==============================================================================
+# Advanced queries for market analysis, user segmentation, and patterns
+
+# ------------------------------------------------------------------------------
+# Query 1: Market Participation Analysis
+# ------------------------------------------------------------------------------
+query MarketParticipationAnalysis {
+  marketParticipations(
+    first: 100
+    orderBy: volume
+    orderDirection: desc
+  ) {
+    id
+    user {
+      id
+      tradeCount
+      totalVolume
+    }
+    market {
+      id
+      outcomeSlotCount
+      resolved
+      totalVolume
+    }
+    tradeCount
+    volume
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: User Concentration in Markets
+# ------------------------------------------------------------------------------
+query UserMarketConcentration($userAddress: ID!) {
+  user(id: $userAddress) {
+    id
+    totalVolume
+    marketsTraded
+    marketParticipations(
+      orderBy: volume
+      orderDirection: desc
+    ) {
+      market { id }
+      tradeCount
+      volume
+      firstTradeTimestamp
+      lastTradeTimestamp
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 3: Token Registry Overview
+# ------------------------------------------------------------------------------
+query TokenRegistryOverview {
+  tokenRegistries(
+    first: 100
+    orderBy: firstSeenTimestamp
+    orderDirection: desc
+  ) {
+    id
+    tokenId
+    market {
+      id
+      outcomeSlotCount
+      resolved
+    }
+    outcomeIndex
+    indexSet
+    collateral
+    firstSeenTimestamp
+    firstSeenBlock
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 4: Exchange Comparison
+# ------------------------------------------------------------------------------
+query ExchangeComparison {
+  legacyTrades: trades(
+    first: 1000
+    where: { exchange: "LEGACY" }
+  ) {
+    id
+    cost
+    fee
+  }
+
+  negRiskTrades: trades(
+    first: 1000
+    where: { exchange: "NEGRISK" }
+  ) {
+    id
+    cost
+    fee
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 5: Market Resolution Analysis
+# ------------------------------------------------------------------------------
+query MarketResolutionAnalysis {
+  resolvedMarkets: markets(
+    first: 100
+    where: { resolved: true }
+    orderBy: resolutionTimestamp
+    orderDirection: desc
+  ) {
+    id
+    outcomeSlotCount
+    winningOutcome
+    tradeCount
+    totalVolume
+    uniqueTraders
+    creationTimestamp
+    resolutionTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: High Value User Cohort
+# ------------------------------------------------------------------------------
+query HighValueUsers {
+  users(
+    first: 100
+    where: {
+      totalVolume_gt: "100000000000"  # >100k USDC
+      marketsTraded_gt: 5
+    }
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 7: Price Discovery Analysis
+# ------------------------------------------------------------------------------
+query PriceDiscoveryAnalysis($marketId: ID!) {
+  trades(
+    where: { market: $marketId }
+    orderBy: timestamp
+    orderDirection: asc
+    first: 1000
+  ) {
+    timestamp
+    price
+    amount
+    side
+    trader { id }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 8: User Retention Analysis
+# ------------------------------------------------------------------------------
+query UserRetentionAnalysis {
+  recentUsers: users(
+    first: 100
+    where: {
+      firstTradeTimestamp_gt: "1704067200"  # After Jan 1, 2024
+    }
+    orderBy: tradeCount
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 9: Market Liquidity Analysis
+# ------------------------------------------------------------------------------
+query MarketLiquidityAnalysis {
+  markets(
+    first: 100
+    where: {
+      resolved: false
+      tradeCount_gt: 10
+    }
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    outcomeSlotCount
+    tradeCount
+    totalVolume
+    uniqueTraders
+    creationTimestamp
+    trades(
+      first: 1
+      orderBy: timestamp
+      orderDirection: desc
+    ) {
+      timestamp
+      price
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 10: Fee Analysis
+# ------------------------------------------------------------------------------
+query FeeAnalysis {
+  users(
+    first: 100
+    orderBy: totalFeesPaid
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    trades(first: 10, orderBy: fee, orderDirection: desc) {
+      fee
+      cost
+      amount
+      timestamp
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 11: Multi-Market Trader Analysis
+# ------------------------------------------------------------------------------
+query MultiMarketTraderAnalysis {
+  users(
+    first: 50
+    where: { marketsTraded_gt: 20 }
+    orderBy: marketsTraded
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    marketsTraded
+    marketParticipations(
+      first: 5
+      orderBy: volume
+      orderDirection: desc
+    ) {
+      market { id }
+      tradeCount
+      volume
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 12: Outcome Preference Analysis
+# ------------------------------------------------------------------------------
+query OutcomePreferenceAnalysis($marketId: ID!) {
+  positions(
+    where: {
+      market: $marketId
+      balance_gt: "0"
+    }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    outcomeIndex
+    balance
+    user { id }
+    avgBuyPrice
+    tradeCount
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 13: Trading Pattern Analysis
+# ------------------------------------------------------------------------------
+query TradingPatternAnalysis($userAddress: ID!) {
+  user(id: $userAddress) {
+    id
+    tradeCount
+    totalVolume
+
+    buyTrades: trades(
+      where: { side: "BUY" }
+      first: 100
+    ) {
+      amount
+      price
+      cost
+      timestamp
+    }
+
+    sellTrades: trades(
+      where: { side: "SELL" }
+      first: 100
+    ) {
+      amount
+      price
+      cost
+      timestamp
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 14: Market Maker Identification
+# ------------------------------------------------------------------------------
+query PotentialMarketMakers {
+  users(
+    first: 50
+    where: {
+      tradeCount_gt: 100
+      marketsTraded_gt: 10
+    }
+    orderBy: tradeCount
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+  }
+}

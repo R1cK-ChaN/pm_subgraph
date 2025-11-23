@@ -1,0 +1,200 @@
+# ==============================================================================
+# 02 - Market Queries
+# ==============================================================================
+# Queries for market data, resolution, and market lifecycle
+
+# ------------------------------------------------------------------------------
+# Query 1: Most Active Markets - By trade count
+# ------------------------------------------------------------------------------
+query MostActiveMarkets {
+  markets(
+    first: 20
+    orderBy: tradeCount
+    orderDirection: desc
+  ) {
+    id
+    questionId
+    outcomeSlotCount
+    tradeCount
+    totalVolume
+    uniqueTraders
+    resolved
+    winningOutcome
+    creationTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: Highest Volume Markets
+# ------------------------------------------------------------------------------
+query HighestVolumeMarkets {
+  markets(
+    first: 20
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    outcomeSlotCount
+    tradeCount
+    totalVolume
+    uniqueTraders
+    resolved
+    creationTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 3: Recently Created Markets
+# ------------------------------------------------------------------------------
+query RecentlyCreatedMarkets {
+  markets(
+    first: 20
+    orderBy: creationTimestamp
+    orderDirection: desc
+  ) {
+    id
+    questionId
+    oracle
+    outcomeSlotCount
+    creationTimestamp
+    creationBlock
+    creationTxHash
+    tradeCount
+    totalVolume
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 4: Resolved Markets
+# ------------------------------------------------------------------------------
+query ResolvedMarkets {
+  markets(
+    first: 50
+    where: { resolved: true }
+    orderBy: resolutionTimestamp
+    orderDirection: desc
+  ) {
+    id
+    outcomeSlotCount
+    winningOutcome
+    payoutNumerators
+    resolutionTimestamp
+    resolutionBlock
+    tradeCount
+    totalVolume
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 5: Unresolved Active Markets
+# ------------------------------------------------------------------------------
+query UnresolvedActiveMarkets {
+  markets(
+    first: 50
+    where: {
+      resolved: false
+      tradeCount_gt: 0
+    }
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    outcomeSlotCount
+    tradeCount
+    totalVolume
+    uniqueTraders
+    creationTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: Specific Market Details
+# ------------------------------------------------------------------------------
+query MarketDetails($marketId: ID!) {
+  market(id: $marketId) {
+    id
+    questionId
+    oracle
+    outcomeSlotCount
+    creationTimestamp
+    creationBlock
+    creationTxHash
+    resolved
+    resolutionTimestamp
+    resolutionBlock
+    winningOutcome
+    payoutNumerators
+    tradeCount
+    totalVolume
+    uniqueTraders
+    tokens {
+      id
+      tokenId
+      outcomeIndex
+      indexSet
+      collateral
+    }
+  }
+}
+
+# Variables for above query:
+# {
+#   "marketId": "0x..."
+# }
+
+# ------------------------------------------------------------------------------
+# Query 7: Markets by Oracle
+# ------------------------------------------------------------------------------
+query MarketsByOracle($oracleAddress: Bytes!) {
+  markets(
+    where: { oracle: $oracleAddress }
+    orderBy: creationTimestamp
+    orderDirection: desc
+  ) {
+    id
+    questionId
+    outcomeSlotCount
+    resolved
+    tradeCount
+    totalVolume
+    creationTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 8: Binary Markets Only (2 outcomes)
+# ------------------------------------------------------------------------------
+query BinaryMarkets {
+  markets(
+    first: 100
+    where: { outcomeSlotCount: 2 }
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    uniqueTraders
+    resolved
+    winningOutcome
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 9: Multi-Outcome Markets (>2 outcomes)
+# ------------------------------------------------------------------------------
+query MultiOutcomeMarkets {
+  markets(
+    first: 100
+    where: { outcomeSlotCount_gt: 2 }
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    outcomeSlotCount
+    tradeCount
+    totalVolume
+    uniqueTraders
+    resolved
+  }
+}

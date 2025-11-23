@@ -1,0 +1,19 @@
+{
+  "globalStats": {
+    "totalMarkets": 23455,
+    "resolvedMarkets": 17430,
+    "totalTrades": 17116968,
+    "totalVolume": "3464074458029304",
+    "totalFees": "62142829093",
+    "totalUsers": 263568,
+    "lastUpdatedBlock": "63417310",
+    "lastUpdatedTimestamp": "1729741904"
+  },
+  "_meta": {
+    "block": {
+      "number": 63417310,
+      "timestamp": 1729741904
+    },
+    "hasIndexingErrors": false
+  }
+}

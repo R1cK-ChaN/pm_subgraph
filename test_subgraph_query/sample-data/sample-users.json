@@ -1,0 +1,902 @@
+[
+  {
+    "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a",
+    "tradeCount": 6113772,
+    "totalVolume": "1503412819615338",
+    "totalFeesPaid": "419079084",
+    "marketsTraded": 5960,
+    "firstTradeTimestamp": "1703215120",
+    "lastTradeTimestamp": "1729741904"
+  },
+  {
+    "id": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
+    "tradeCount": 1562442,
+    "totalVolume": "402127097557911",
+    "totalFeesPaid": "56966478633",
+    "marketsTraded": 7219,
+    "firstTradeTimestamp": "1669060209",
+    "lastTradeTimestamp": "1729741892"
+  },
+  {
+    "id": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "tradeCount": 143685,
+    "totalVolume": "118284792273809",
+    "totalFeesPaid": "130500",
+    "marketsTraded": 318,
+    "firstTradeTimestamp": "1718303288",
+    "lastTradeTimestamp": "1729739114"
+  },
+  {
+    "id": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+    "tradeCount": 366556,
+    "totalVolume": "111669877958757",
+    "totalFeesPaid": "1000310333",
+    "marketsTraded": 5285,
+    "firstTradeTimestamp": "1670878701",
+    "lastTradeTimestamp": "1729741904"
+  },
+  {
+    "id": "0xa1d75a199ef084ee3ec9ae60dc986b439fe6e17e",
+    "tradeCount": 185904,
+    "totalVolume": "78129989283800",
+    "totalFeesPaid": "0",
+    "marketsTraded": 1311,
+    "firstTradeTimestamp": "1723096321",
+    "lastTradeTimestamp": "1729738372"
+  },
+  {
+    "id": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
+    "tradeCount": 272893,
+    "totalVolume": "74901426442990",
+    "totalFeesPaid": "129509926",
+    "marketsTraded": 3383,
+    "firstTradeTimestamp": "1670915361",
+    "lastTradeTimestamp": "1729741780"
+  },
+  {
+    "id": "0xfffe4013adfe325c6e02d36dc66e091f5476f52c",
+    "tradeCount": 16069,
+    "totalVolume": "70562898938141",
+    "totalFeesPaid": "1202659",
+    "marketsTraded": 91,
+    "firstTradeTimestamp": "1712550022",
+    "lastTradeTimestamp": "1729740404"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d",
+    "tradeCount": 433041,
+    "totalVolume": "63491666731584",
+    "totalFeesPaid": "11099598",
+    "marketsTraded": 1990,
+    "firstTradeTimestamp": "1708163931",
+    "lastTradeTimestamp": "1729741766"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029",
+    "tradeCount": 122520,
+    "totalVolume": "54747288333958",
+    "totalFeesPaid": "1790000",
+    "marketsTraded": 168,
+    "firstTradeTimestamp": "1711092481",
+    "lastTradeTimestamp": "1729741904"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad",
+    "tradeCount": 484561,
+    "totalVolume": "51606333472577",
+    "totalFeesPaid": "2577257",
+    "marketsTraded": 2482,
+    "firstTradeTimestamp": "1717090769",
+    "lastTradeTimestamp": "1729732074"
+  },
+  {
+    "id": "0x6356fb47642a028bc09df92023c35a21a0b41885",
+    "tradeCount": 164544,
+    "totalVolume": "45331117705631",
+    "totalFeesPaid": "21741150",
+    "marketsTraded": 2917,
+    "firstTradeTimestamp": "1670912812",
+    "lastTradeTimestamp": "1729741776"
+  },
+  {
+    "id": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
+    "tradeCount": 30780,
+    "totalVolume": "44806972261458",
+    "totalFeesPaid": "0",
+    "marketsTraded": 45,
+    "firstTradeTimestamp": "1722700031",
+    "lastTradeTimestamp": "1729740770"
+  },
+  {
+    "id": "0x30e443872ddf63b2908a49f92cd690c304a55102",
+    "tradeCount": 66062,
+    "totalVolume": "35109171538019",
+    "totalFeesPaid": "785139",
+    "marketsTraded": 1519,
+    "firstTradeTimestamp": "1670894689",
+    "lastTradeTimestamp": "1729741822"
+  },
+  {
+    "id": "0xf8ba34bf0e95d952d05b578bfbc0833f9242a286",
+    "tradeCount": 115824,
+    "totalVolume": "32065552806870",
+    "totalFeesPaid": "75410",
+    "marketsTraded": 2389,
+    "firstTradeTimestamp": "1720493974",
+    "lastTradeTimestamp": "1729741900"
+  },
+  {
+    "id": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+    "tradeCount": 22946,
+    "totalVolume": "27635429061002",
+    "totalFeesPaid": "221720",
+    "marketsTraded": 769,
+    "firstTradeTimestamp": "1705192498",
+    "lastTradeTimestamp": "1729733658"
+  },
+  {
+    "id": "0xfe911a4e80ee71b47cd1ee690733ac4062e970ff",
+    "tradeCount": 131150,
+    "totalVolume": "27246173202399",
+    "totalFeesPaid": "630000",
+    "marketsTraded": 2217,
+    "firstTradeTimestamp": "1716346754",
+    "lastTradeTimestamp": "1729741900"
+  },
+  {
+    "id": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
+    "tradeCount": 18076,
+    "totalVolume": "26007635293009",
+    "totalFeesPaid": "0",
+    "marketsTraded": 10,
+    "firstTradeTimestamp": "1728918952",
+    "lastTradeTimestamp": "1729711303"
+  },
+  {
+    "id": "0x8a4c788f043023b8b28a762216d037e9f148532b",
+    "tradeCount": 23545,
+    "totalVolume": "25202330641034",
+    "totalFeesPaid": "200000000",
+    "marketsTraded": 585,
+    "firstTradeTimestamp": "1670870620",
+    "lastTradeTimestamp": "1729705719"
+  },
+  {
+    "id": "0x1dbd30000dd7dd051e8fc803fac38e8246d9af92",
+    "tradeCount": 117981,
+    "totalVolume": "24485658468424",
+    "totalFeesPaid": "0",
+    "marketsTraded": 3290,
+    "firstTradeTimestamp": "1692113633",
+    "lastTradeTimestamp": "1729741520"
+  },
+  {
+    "id": "0xecdbd79566a25693b9971c48d7de84bc05f7da79",
+    "tradeCount": 123314,
+    "totalVolume": "22620022573863",
+    "totalFeesPaid": "0",
+    "marketsTraded": 1021,
+    "firstTradeTimestamp": "1691252058",
+    "lastTradeTimestamp": "1729741884"
+  },
+  {
+    "id": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
+    "tradeCount": 76493,
+    "totalVolume": "22420347709646",
+    "totalFeesPaid": "146078",
+    "marketsTraded": 2336,
+    "firstTradeTimestamp": "1721152123",
+    "lastTradeTimestamp": "1729741844"
+  },
+  {
+    "id": "0xe29aaa4696b824ae186075a4a1220262f2f7612f",
+    "tradeCount": 3257,
+    "totalVolume": "22240163877017",
+    "totalFeesPaid": "0",
+    "marketsTraded": 44,
+    "firstTradeTimestamp": "1721769433",
+    "lastTradeTimestamp": "1729741604"
+  },
+  {
+    "id": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
+    "tradeCount": 295401,
+    "totalVolume": "21947915020700",
+    "totalFeesPaid": "973400",
+    "marketsTraded": 5682,
+    "firstTradeTimestamp": "1701405902",
+    "lastTradeTimestamp": "1729741714"
+  },
+  {
+    "id": "0x9c88c0ad88b0c7dd929b0cf040abc9a46b2bc405",
+    "tradeCount": 20404,
+    "totalVolume": "21053351638636",
+    "totalFeesPaid": "1780000",
+    "marketsTraded": 2595,
+    "firstTradeTimestamp": "1704601757",
+    "lastTradeTimestamp": "1729040951"
+  },
+  {
+    "id": "0x2a6db57a2345fb0bc1df712cbd214a1dfffdcbac",
+    "tradeCount": 38210,
+    "totalVolume": "20927364315174",
+    "totalFeesPaid": "0",
+    "marketsTraded": 3,
+    "firstTradeTimestamp": "1727811121",
+    "lastTradeTimestamp": "1729740092"
+  },
+  {
+    "id": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
+    "tradeCount": 86165,
+    "totalVolume": "20598873409753",
+    "totalFeesPaid": "69939780",
+    "marketsTraded": 2162,
+    "firstTradeTimestamp": "1670903165",
+    "lastTradeTimestamp": "1729741488"
+  },
+  {
+    "id": "0x482bf5accdecfaffa67c14d4d4fbb59f428a3266",
+    "tradeCount": 58836,
+    "totalVolume": "20243337410377",
+    "totalFeesPaid": "53514",
+    "marketsTraded": 12,
+    "firstTradeTimestamp": "1726912046",
+    "lastTradeTimestamp": "1729733990"
+  },
+  {
+    "id": "0x7789806c754eb0af4c3abeb026c218b4ba78f823",
+    "tradeCount": 191165,
+    "totalVolume": "19900313164921",
+    "totalFeesPaid": "90000",
+    "marketsTraded": 3328,
+    "firstTradeTimestamp": "1670909295",
+    "lastTradeTimestamp": "1728352874"
+  },
+  {
+    "id": "0x7bda5bceac127c3fc41d7fe7ac335593aaaa121b",
+    "tradeCount": 33057,
+    "totalVolume": "19519763759377",
+    "totalFeesPaid": "0",
+    "marketsTraded": 826,
+    "firstTradeTimestamp": "1723741399",
+    "lastTradeTimestamp": "1729600384"
+  },
+  {
+    "id": "0x62d2bcd198bb6eab8b7eeb9d2061815dc02b9eb7",
+    "tradeCount": 36194,
+    "totalVolume": "18881428894152",
+    "totalFeesPaid": "50000",
+    "marketsTraded": 1758,
+    "firstTradeTimestamp": "1670912002",
+    "lastTradeTimestamp": "1729738990"
+  },
+  {
+    "id": "0xaaf4acafbb7980ce93631d238eb10a5c4ca67883",
+    "tradeCount": 53870,
+    "totalVolume": "18594886123418",
+    "totalFeesPaid": "72280",
+    "marketsTraded": 1567,
+    "firstTradeTimestamp": "1670961170",
+    "lastTradeTimestamp": "1729594754"
+  },
+  {
+    "id": "0x8119010a6e589062aa03583bb3f39ca632d9f887",
+    "tradeCount": 8968,
+    "totalVolume": "18225219342690",
+    "totalFeesPaid": "0",
+    "marketsTraded": 14,
+    "firstTradeTimestamp": "1727882078",
+    "lastTradeTimestamp": "1729282755"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9",
+    "tradeCount": 91729,
+    "totalVolume": "17345077389395",
+    "totalFeesPaid": "210000",
+    "marketsTraded": 67,
+    "firstTradeTimestamp": "1717398264",
+    "lastTradeTimestamp": "1729741592"
+  },
+  {
+    "id": "0xe64ffa7621459172ad81960762d5760e65d444a5",
+    "tradeCount": 9677,
+    "totalVolume": "17097605103133",
+    "totalFeesPaid": "17110",
+    "marketsTraded": 176,
+    "firstTradeTimestamp": "1721669266",
+    "lastTradeTimestamp": "1729740426"
+  },
+  {
+    "id": "0x6b7ec4ba079c0a258435ea36025f6190cd424562",
+    "tradeCount": 71279,
+    "totalVolume": "16496957794016",
+    "totalFeesPaid": "1358900",
+    "marketsTraded": 4992,
+    "firstTradeTimestamp": "1704897673",
+    "lastTradeTimestamp": "1729741628"
+  },
+  {
+    "id": "0xc6587b11a2209e46dfe3928b31c5514a8e33b784",
+    "tradeCount": 5225,
+    "totalVolume": "15372217646509",
+    "totalFeesPaid": "0",
+    "marketsTraded": 168,
+    "firstTradeTimestamp": "1722346572",
+    "lastTradeTimestamp": "1729717011"
+  },
+  {
+    "id": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
+    "tradeCount": 340802,
+    "totalVolume": "14793448191728",
+    "totalFeesPaid": "181539677",
+    "marketsTraded": 698,
+    "firstTradeTimestamp": "1686174331",
+    "lastTradeTimestamp": "1729741894"
+  },
+  {
+    "id": "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675",
+    "tradeCount": 38847,
+    "totalVolume": "14723856371051",
+    "totalFeesPaid": "2527312",
+    "marketsTraded": 253,
+    "firstTradeTimestamp": "1722345144",
+    "lastTradeTimestamp": "1729741898"
+  },
+  {
+    "id": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
+    "tradeCount": 26219,
+    "totalVolume": "14708040040075",
+    "totalFeesPaid": "29870",
+    "marketsTraded": 12,
+    "firstTradeTimestamp": "1725957662",
+    "lastTradeTimestamp": "1729720722"
+  },
+  {
+    "id": "0x7523cafcee7bcf2db9a79d80e0d79b88a9a54c4c",
+    "tradeCount": 7598,
+    "totalVolume": "14460835678008",
+    "totalFeesPaid": "250000",
+    "marketsTraded": 252,
+    "firstTradeTimestamp": "1692808469",
+    "lastTradeTimestamp": "1729706889"
+  },
+  {
+    "id": "0xe5c09aed85ffa8d28972ae74bac63f465a3e3f84",
+    "tradeCount": 10460,
+    "totalVolume": "13766745928550",
+    "totalFeesPaid": "0",
+    "marketsTraded": 458,
+    "firstTradeTimestamp": "1726184354",
+    "lastTradeTimestamp": "1729741292"
+  },
+  {
+    "id": "0x40324412290b9d311f03b707467c61d88cf141a2",
+    "tradeCount": 3949,
+    "totalVolume": "13407517489238",
+    "totalFeesPaid": "0",
+    "marketsTraded": 11,
+    "firstTradeTimestamp": "1721238479",
+    "lastTradeTimestamp": "1728697863"
+  },
+  {
+    "id": "0xbd0e67d902fd2e8457bd252baaf83365ec4bc396",
+    "tradeCount": 129822,
+    "totalVolume": "13339633769496",
+    "totalFeesPaid": "210000",
+    "marketsTraded": 123,
+    "firstTradeTimestamp": "1720201744",
+    "lastTradeTimestamp": "1729395496"
+  },
+  {
+    "id": "0x351a72160e477863d13666c62ef1e7631b3940bb",
+    "tradeCount": 5498,
+    "totalVolume": "13298117173416",
+    "totalFeesPaid": "0",
+    "marketsTraded": 177,
+    "firstTradeTimestamp": "1705705034",
+    "lastTradeTimestamp": "1723008008"
+  },
+  {
+    "id": "0x79f293c48f651baa31c8086a228102f57b127620",
+    "tradeCount": 9073,
+    "totalVolume": "13173640436984",
+    "totalFeesPaid": "0",
+    "marketsTraded": 130,
+    "firstTradeTimestamp": "1716395314",
+    "lastTradeTimestamp": "1729685928"
+  },
+  {
+    "id": "0xd197e0a8249a9f1f503f2dcf23044100d7b613f0",
+    "tradeCount": 1788,
+    "totalVolume": "12668183444829",
+    "totalFeesPaid": "0",
+    "marketsTraded": 5,
+    "firstTradeTimestamp": "1726035811",
+    "lastTradeTimestamp": "1727934872"
+  },
+  {
+    "id": "0x8e5a5d37a354f4e05badd0d9e91b519774e44ef5",
+    "tradeCount": 11441,
+    "totalVolume": "12574478891491",
+    "totalFeesPaid": "16464",
+    "marketsTraded": 390,
+    "firstTradeTimestamp": "1709151526",
+    "lastTradeTimestamp": "1729624670"
+  },
+  {
+    "id": "0x47bc4b50a8d0c4a07b22bfd949f9c6afb8aec043",
+    "tradeCount": 20858,
+    "totalVolume": "12346371204313",
+    "totalFeesPaid": "4446038",
+    "marketsTraded": 499,
+    "firstTradeTimestamp": "1673833572",
+    "lastTradeTimestamp": "1729741376"
+  },
+  {
+    "id": "0xe899b5ea69afb161da7a35597b6fe70398860899",
+    "tradeCount": 4071,
+    "totalVolume": "12264350433064",
+    "totalFeesPaid": "0",
+    "marketsTraded": 124,
+    "firstTradeTimestamp": "1679144914",
+    "lastTradeTimestamp": "1729703655"
+  },
+  {
+    "id": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+    "tradeCount": 6996,
+    "totalVolume": "12120642044266",
+    "totalFeesPaid": "0",
+    "marketsTraded": 216,
+    "firstTradeTimestamp": "1717200261",
+    "lastTradeTimestamp": "1729679206"
+  },
+  {
+    "id": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+    "tradeCount": 181957,
+    "totalVolume": "11929604412805",
+    "totalFeesPaid": "150000",
+    "marketsTraded": 1269,
+    "firstTradeTimestamp": "1727080577",
+    "lastTradeTimestamp": "1729714557"
+  },
+  {
+    "id": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
+    "tradeCount": 4394,
+    "totalVolume": "11744580286596",
+    "totalFeesPaid": "600000",
+    "marketsTraded": 195,
+    "firstTradeTimestamp": "1682783230",
+    "lastTradeTimestamp": "1729735454"
+  },
+  {
+    "id": "0xe5c8026239919339b988fdb150a7ef4ea196d3e7",
+    "tradeCount": 8539,
+    "totalVolume": "11513833273563",
+    "totalFeesPaid": "164750",
+    "marketsTraded": 123,
+    "firstTradeTimestamp": "1721685811",
+    "lastTradeTimestamp": "1728941175"
+  },
+  {
+    "id": "0x1bfdf7224c358405a486b5fd8489f13c2adcb5f3",
+    "tradeCount": 20828,
+    "totalVolume": "11351245506131",
+    "totalFeesPaid": "0",
+    "marketsTraded": 227,
+    "firstTradeTimestamp": "1721689761",
+    "lastTradeTimestamp": "1729741896"
+  },
+  {
+    "id": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
+    "tradeCount": 19334,
+    "totalVolume": "10879026586015",
+    "totalFeesPaid": "192883881",
+    "marketsTraded": 651,
+    "firstTradeTimestamp": "1670869607",
+    "lastTradeTimestamp": "1729738656"
+  },
+  {
+    "id": "0x863134d00841b2e200492805a01e1e2f5defaa53",
+    "tradeCount": 7196,
+    "totalVolume": "10355887951961",
+    "totalFeesPaid": "0",
+    "marketsTraded": 8,
+    "firstTradeTimestamp": "1729169410",
+    "lastTradeTimestamp": "1729739156"
+  },
+  {
+    "id": "0x5fc814d89c2aa979bd987add20d6eb39eb0439ef",
+    "tradeCount": 12220,
+    "totalVolume": "10032941132428",
+    "totalFeesPaid": "219227",
+    "marketsTraded": 538,
+    "firstTradeTimestamp": "1689466119",
+    "lastTradeTimestamp": "1729739376"
+  },
+  {
+    "id": "0x571080e37b2d37f65830e8795e38e3ca9a28ce1d",
+    "tradeCount": 437498,
+    "totalVolume": "9833508369185",
+    "totalFeesPaid": "30000",
+    "marketsTraded": 2170,
+    "firstTradeTimestamp": "1722514992",
+    "lastTradeTimestamp": "1729715583"
+  },
+  {
+    "id": "0x9e41715a30ce73ce00ecaf9bd99be03d8615cf4d",
+    "tradeCount": 24295,
+    "totalVolume": "9669614740987",
+    "totalFeesPaid": "0",
+    "marketsTraded": 679,
+    "firstTradeTimestamp": "1704613199",
+    "lastTradeTimestamp": "1729700111"
+  },
+  {
+    "id": "0xc6208602d8a6295983ebfe0b0aeb51ce92a82da3",
+    "tradeCount": 20482,
+    "totalVolume": "9483120153129",
+    "totalFeesPaid": "71176",
+    "marketsTraded": 450,
+    "firstTradeTimestamp": "1720634197",
+    "lastTradeTimestamp": "1729736570"
+  },
+  {
+    "id": "0xc4439174a5d5f821e173ce86def1d86c3145f19f",
+    "tradeCount": 3211,
+    "totalVolume": "9478879761797",
+    "totalFeesPaid": "0",
+    "marketsTraded": 94,
+    "firstTradeTimestamp": "1687629255",
+    "lastTradeTimestamp": "1729210714"
+  },
+  {
+    "id": "0xb0a98580b05a323df0c3bce5b1e89a346e53dd8d",
+    "tradeCount": 5695,
+    "totalVolume": "9188579532615",
+    "totalFeesPaid": "0",
+    "marketsTraded": 36,
+    "firstTradeTimestamp": "1724029967",
+    "lastTradeTimestamp": "1729405547"
+  },
+  {
+    "id": "0x5d8a990810b5975a98f0a2f593ae1bdac71604ec",
+    "tradeCount": 1584,
+    "totalVolume": "9161089991749",
+    "totalFeesPaid": "0",
+    "marketsTraded": 19,
+    "firstTradeTimestamp": "1721071719",
+    "lastTradeTimestamp": "1729621716"
+  },
+  {
+    "id": "0x739264b66172de20f95696643b84a4dd596ef6ff",
+    "tradeCount": 61281,
+    "totalVolume": "9120963033196",
+    "totalFeesPaid": "0",
+    "marketsTraded": 40,
+    "firstTradeTimestamp": "1727075005",
+    "lastTradeTimestamp": "1729741834"
+  },
+  {
+    "id": "0x7821317090705c46e50e1e5b6c4bbff22dece564",
+    "tradeCount": 10795,
+    "totalVolume": "8744943553675",
+    "totalFeesPaid": "0",
+    "marketsTraded": 99,
+    "firstTradeTimestamp": "1724851134",
+    "lastTradeTimestamp": "1729140728"
+  },
+  {
+    "id": "0x629bc4a1e53e1d475beb7ea3d388791e96dd995a",
+    "tradeCount": 9905,
+    "totalVolume": "8680049957849",
+    "totalFeesPaid": "166898281",
+    "marketsTraded": 171,
+    "firstTradeTimestamp": "1681896466",
+    "lastTradeTimestamp": "1729740636"
+  },
+  {
+    "id": "0xd235973291b2b75ff4070e9c0b01728c520b0f29",
+    "tradeCount": 5527,
+    "totalVolume": "8557101212673",
+    "totalFeesPaid": "187789",
+    "marketsTraded": 2,
+    "firstTradeTimestamp": "1728605094",
+    "lastTradeTimestamp": "1729741388"
+  },
+  {
+    "id": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
+    "tradeCount": 94647,
+    "totalVolume": "8449382639190",
+    "totalFeesPaid": "120000",
+    "marketsTraded": 2037,
+    "firstTradeTimestamp": "1680603514",
+    "lastTradeTimestamp": "1729741824"
+  },
+  {
+    "id": "0x43372356634781eea88d61bbdd7824cdce958882",
+    "tradeCount": 63172,
+    "totalVolume": "8341402396174",
+    "totalFeesPaid": "0",
+    "marketsTraded": 3936,
+    "firstTradeTimestamp": "1670880783",
+    "lastTradeTimestamp": "1729741784"
+  },
+  {
+    "id": "0xdcb20a5c24aa616747f19beabff6152c69863e05",
+    "tradeCount": 10360,
+    "totalVolume": "8103474494019",
+    "totalFeesPaid": "0",
+    "marketsTraded": 502,
+    "firstTradeTimestamp": "1695165511",
+    "lastTradeTimestamp": "1729733804"
+  },
+  {
+    "id": "0x8ca5712e00cd8bab6d0accab3d8b524668e976bf",
+    "tradeCount": 4708,
+    "totalVolume": "7972399966455",
+    "totalFeesPaid": "0",
+    "marketsTraded": 95,
+    "firstTradeTimestamp": "1722884981",
+    "lastTradeTimestamp": "1729632292"
+  },
+  {
+    "id": "0x14ec52aa3acca05a3973d3f587b612be496e1b38",
+    "tradeCount": 19539,
+    "totalVolume": "7962263697948",
+    "totalFeesPaid": "0",
+    "marketsTraded": 3,
+    "firstTradeTimestamp": "1725759628",
+    "lastTradeTimestamp": "1729269097"
+  },
+  {
+    "id": "0xa710f0eae9129df28a52e886902c443364004173",
+    "tradeCount": 8477,
+    "totalVolume": "7683426662196",
+    "totalFeesPaid": "630000",
+    "marketsTraded": 242,
+    "firstTradeTimestamp": "1675812167",
+    "lastTradeTimestamp": "1729741294"
+  },
+  {
+    "id": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+    "tradeCount": 64045,
+    "totalVolume": "7678116741404",
+    "totalFeesPaid": "300845",
+    "marketsTraded": 1020,
+    "firstTradeTimestamp": "1714579342",
+    "lastTradeTimestamp": "1729741510"
+  },
+  {
+    "id": "0x182b2bd1f035abe76eeb2244b32d9ebac27ef022",
+    "tradeCount": 69343,
+    "totalVolume": "7635711647510",
+    "totalFeesPaid": "1962732",
+    "marketsTraded": 2536,
+    "firstTradeTimestamp": "1718370527",
+    "lastTradeTimestamp": "1729732384"
+  },
+  {
+    "id": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
+    "tradeCount": 36829,
+    "totalVolume": "7591734096563",
+    "totalFeesPaid": "0",
+    "marketsTraded": 1848,
+    "firstTradeTimestamp": "1695694794",
+    "lastTradeTimestamp": "1729741202"
+  },
+  {
+    "id": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+    "tradeCount": 8995,
+    "totalVolume": "7560825035740",
+    "totalFeesPaid": "0",
+    "marketsTraded": 255,
+    "firstTradeTimestamp": "1670877130",
+    "lastTradeTimestamp": "1729735730"
+  },
+  {
+    "id": "0xa67209aaa09ba891adb7d291310e49914472f083",
+    "tradeCount": 9351,
+    "totalVolume": "7520529281515",
+    "totalFeesPaid": "51706345",
+    "marketsTraded": 252,
+    "firstTradeTimestamp": "1678909014",
+    "lastTradeTimestamp": "1729739434"
+  },
+  {
+    "id": "0xd28e607b987dca18eb4fd06ac81186d548c02f42",
+    "tradeCount": 7185,
+    "totalVolume": "7420348398028",
+    "totalFeesPaid": "144827",
+    "marketsTraded": 178,
+    "firstTradeTimestamp": "1701459755",
+    "lastTradeTimestamp": "1729727364"
+  },
+  {
+    "id": "0xe639e41094bbeae18f3e6d1790c17299183f082a",
+    "tradeCount": 2233,
+    "totalVolume": "7133158623110",
+    "totalFeesPaid": "0",
+    "marketsTraded": 92,
+    "firstTradeTimestamp": "1721614227",
+    "lastTradeTimestamp": "1729707957"
+  },
+  {
+    "id": "0x9b854cf03e537064f775fb6f177c562ca010746c",
+    "tradeCount": 1230,
+    "totalVolume": "7112484120471",
+    "totalFeesPaid": "0",
+    "marketsTraded": 2,
+    "firstTradeTimestamp": "1725642387",
+    "lastTradeTimestamp": "1727108822"
+  },
+  {
+    "id": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
+    "tradeCount": 98184,
+    "totalVolume": "7036396096443",
+    "totalFeesPaid": "100000",
+    "marketsTraded": 1613,
+    "firstTradeTimestamp": "1725960712",
+    "lastTradeTimestamp": "1729737440"
+  },
+  {
+    "id": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+    "tradeCount": 26381,
+    "totalVolume": "7008544866066",
+    "totalFeesPaid": "0",
+    "marketsTraded": 1163,
+    "firstTradeTimestamp": "1707441608",
+    "lastTradeTimestamp": "1729740804"
+  },
+  {
+    "id": "0x5431a20c76d561eced1b492c18a2a7229bf447e1",
+    "tradeCount": 13494,
+    "totalVolume": "6975270447354",
+    "totalFeesPaid": "782200",
+    "marketsTraded": 283,
+    "firstTradeTimestamp": "1717575376",
+    "lastTradeTimestamp": "1729741276"
+  },
+  {
+    "id": "0x843409738e5533ce49d5f45d024b88ee61da34b9",
+    "tradeCount": 24573,
+    "totalVolume": "6921640359491",
+    "totalFeesPaid": "1671400",
+    "marketsTraded": 551,
+    "firstTradeTimestamp": "1721252106",
+    "lastTradeTimestamp": "1723172013"
+  },
+  {
+    "id": "0x2373809dadc2c73d05038df89e9399560f445b7f",
+    "tradeCount": 1766,
+    "totalVolume": "6872386705942",
+    "totalFeesPaid": "0",
+    "marketsTraded": 5,
+    "firstTradeTimestamp": "1720852617",
+    "lastTradeTimestamp": "1726654143"
+  },
+  {
+    "id": "0x71ed0bc95433cdf1be29f43219725fce9addd9eb",
+    "tradeCount": 17403,
+    "totalVolume": "6842539751176",
+    "totalFeesPaid": "0",
+    "marketsTraded": 301,
+    "firstTradeTimestamp": "1704971597",
+    "lastTradeTimestamp": "1729740778"
+  },
+  {
+    "id": "0xed2239a9150c3920000d0094d28fa51c7db03dd0",
+    "tradeCount": 6231,
+    "totalVolume": "6829156384245",
+    "totalFeesPaid": "0",
+    "marketsTraded": 13,
+    "firstTradeTimestamp": "1728193251",
+    "lastTradeTimestamp": "1729186287"
+  },
+  {
+    "id": "0x676146d7f28f2cef63419a60bb1fb4afec5da94f",
+    "tradeCount": 12760,
+    "totalVolume": "6727226040764",
+    "totalFeesPaid": "0",
+    "marketsTraded": 417,
+    "firstTradeTimestamp": "1726415005",
+    "lastTradeTimestamp": "1729729029"
+  },
+  {
+    "id": "0x59ce25a63a7b4f3d03f25976f9cb3b2625f5cc34",
+    "tradeCount": 512,
+    "totalVolume": "6546720941658",
+    "totalFeesPaid": "0",
+    "marketsTraded": 4,
+    "firstTradeTimestamp": "1729380069",
+    "lastTradeTimestamp": "1729679272"
+  },
+  {
+    "id": "0x5a181dcf3eb53a09fb32b20a5a9312fb8d26f689",
+    "tradeCount": 2090,
+    "totalVolume": "6531751065244",
+    "totalFeesPaid": "0",
+    "marketsTraded": 76,
+    "firstTradeTimestamp": "1678936305",
+    "lastTradeTimestamp": "1706543693"
+  },
+  {
+    "id": "0x70b918c1d5b4bb7ab90696a9cadf886fd9a374ce",
+    "tradeCount": 1857,
+    "totalVolume": "6499153211890",
+    "totalFeesPaid": "0",
+    "marketsTraded": 29,
+    "firstTradeTimestamp": "1705953634",
+    "lastTradeTimestamp": "1726173894"
+  },
+  {
+    "id": "0xb532895e91e79422299d365c6bd0367ac35a916b",
+    "tradeCount": 6816,
+    "totalVolume": "6470111394207",
+    "totalFeesPaid": "0",
+    "marketsTraded": 200,
+    "firstTradeTimestamp": "1695520213",
+    "lastTradeTimestamp": "1729690384"
+  },
+  {
+    "id": "0x9fc48c61578e3d7c5ff6570e06952cda87b3d24c",
+    "tradeCount": 7203,
+    "totalVolume": "6454851116238",
+    "totalFeesPaid": "55200",
+    "marketsTraded": 31,
+    "firstTradeTimestamp": "1720835774",
+    "lastTradeTimestamp": "1729718475"
+  },
+  {
+    "id": "0x1e8a3aec2e12020f06d0788cefd357c21aa29f8f",
+    "tradeCount": 20510,
+    "totalVolume": "5940832661341",
+    "totalFeesPaid": "0",
+    "marketsTraded": 2,
+    "firstTradeTimestamp": "1728681116",
+    "lastTradeTimestamp": "1729741810"
+  },
+  {
+    "id": "0xe1e7036279433715711a65fc3254a8af558c5fb6",
+    "tradeCount": 5474,
+    "totalVolume": "5929730879845",
+    "totalFeesPaid": "50000",
+    "marketsTraded": 101,
+    "firstTradeTimestamp": "1687846584",
+    "lastTradeTimestamp": "1729729444"
+  },
+  {
+    "id": "0xbd36598f99552ab7a104e256344529d11142e5b3",
+    "tradeCount": 831,
+    "totalVolume": "5906590888637",
+    "totalFeesPaid": "0",
+    "marketsTraded": 4,
+    "firstTradeTimestamp": "1726082569",
+    "lastTradeTimestamp": "1726534894"
+  },
+  {
+    "id": "0xf4f3476be6e5b2de3a7e1bc849ff4b047bef330d",
+    "tradeCount": 10339,
+    "totalVolume": "5813276194309",
+    "totalFeesPaid": "100000",
+    "marketsTraded": 155,
+    "firstTradeTimestamp": "1706672288",
+    "lastTradeTimestamp": "1729739226"
+  },
+  {
+    "id": "0x899d495a5e1ca2c1b415b8a2c87edb026f7607c8",
+    "tradeCount": 11023,
+    "totalVolume": "5751114399460",
+    "totalFeesPaid": "0",
+    "marketsTraded": 535,
+    "firstTradeTimestamp": "1671574921",
+    "lastTradeTimestamp": "1729741202"
+  },
+  {
+    "id": "0x5c85cc2310701336b6cbc38bb0ef562989a4b2d1",
+    "tradeCount": 14761,
+    "totalVolume": "5708900655281",
+    "totalFeesPaid": "0",
+    "marketsTraded": 1,
+    "firstTradeTimestamp": "1728210559",
+    "lastTradeTimestamp": "1729082264"
+  }
+]

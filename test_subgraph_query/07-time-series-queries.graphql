@@ -1,0 +1,298 @@
+# ==============================================================================
+# 07 - Time Series Queries
+# ==============================================================================
+# Queries for daily statistics, trends, and historical analysis
+
+# ------------------------------------------------------------------------------
+# Query 1: Recent Daily Statistics
+# ------------------------------------------------------------------------------
+query RecentDailyStats {
+  dailyStats_collection(
+    first: 30
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    newMarkets
+    resolvedMarkets
+    tradeCount
+    volume
+    fees
+    newUsers
+    activeUsers
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: Daily Volume Trend
+# ------------------------------------------------------------------------------
+query DailyVolumeTrend($days: Int!) {
+  dailyStats_collection(
+    first: $days
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    volume
+    tradeCount
+    activeUsers
+  }
+}
+
+# Variables:
+# {
+#   "days": 90
+# }
+
+# ------------------------------------------------------------------------------
+# Query 3: Daily New Users Growth
+# ------------------------------------------------------------------------------
+query DailyUserGrowth {
+  dailyStats_collection(
+    first: 365
+    orderBy: dayTimestamp
+    orderDirection: asc
+  ) {
+    id
+    dayTimestamp
+    newUsers
+    activeUsers
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 4: Daily Market Activity
+# ------------------------------------------------------------------------------
+query DailyMarketActivity {
+  dailyStats_collection(
+    first: 90
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    newMarkets
+    resolvedMarkets
+    tradeCount
+    volume
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 5: High Activity Days
+# ------------------------------------------------------------------------------
+query HighActivityDays {
+  dailyStats_collection(
+    first: 50
+    orderBy: volume
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    tradeCount
+    volume
+    activeUsers
+    newMarkets
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: Daily Fee Collection
+# ------------------------------------------------------------------------------
+query DailyFeeCollection {
+  dailyStats_collection(
+    first: 90
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    fees
+    volume
+    tradeCount
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 7: Weekly Aggregates (manual grouping needed client-side)
+# ------------------------------------------------------------------------------
+query WeeklyData {
+  dailyStats_collection(
+    first: 365
+    orderBy: dayTimestamp
+    orderDirection: asc
+  ) {
+    dayTimestamp
+    tradeCount
+    volume
+    activeUsers
+    newUsers
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 8: Time Range Statistics
+# ------------------------------------------------------------------------------
+query TimeRangeStats($startTime: BigInt!, $endTime: BigInt!) {
+  dailyStats_collection(
+    where: {
+      dayTimestamp_gte: $startTime
+      dayTimestamp_lte: $endTime
+    }
+    orderBy: dayTimestamp
+    orderDirection: asc
+  ) {
+    id
+    dayTimestamp
+    newMarkets
+    resolvedMarkets
+    tradeCount
+    volume
+    fees
+    newUsers
+    activeUsers
+  }
+}
+
+# Variables example:
+# {
+#   "startTime": "1704067200",  # Jan 1, 2024
+#   "endTime": "1711929600"     # Apr 1, 2024
+# }
+
+# ------------------------------------------------------------------------------
+# Query 9: User Activity Timeline
+# ------------------------------------------------------------------------------
+query UserActivityTimeline($userAddress: ID!) {
+  trades(
+    where: { trader: $userAddress }
+    orderBy: timestamp
+    orderDirection: asc
+    first: 1000
+  ) {
+    timestamp
+    cost
+    side
+    market { id }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 10: Market Activity Timeline
+# ------------------------------------------------------------------------------
+query MarketActivityTimeline($marketId: ID!) {
+  trades(
+    where: { market: $marketId }
+    orderBy: timestamp
+    orderDirection: asc
+    first: 1000
+  ) {
+    timestamp
+    price
+    amount
+    side
+    trader { id }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 11: Cumulative Statistics Over Time
+# ------------------------------------------------------------------------------
+query CumulativeStatistics {
+  dailyStats_collection(
+    first: 365
+    orderBy: dayTimestamp
+    orderDirection: asc
+  ) {
+    dayTimestamp
+    tradeCount
+    volume
+    newUsers
+    activeUsers
+    newMarkets
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 12: Recent Activity Comparison
+# ------------------------------------------------------------------------------
+query RecentActivityComparison {
+  last7Days: dailyStats_collection(
+    first: 7
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    dayTimestamp
+    tradeCount
+    volume
+    activeUsers
+  }
+
+  last30Days: dailyStats_collection(
+    first: 30
+    orderBy: dayTimestamp
+    orderDirection: desc
+  ) {
+    dayTimestamp
+    tradeCount
+    volume
+    activeUsers
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 13: Peak Activity Analysis
+# ------------------------------------------------------------------------------
+query PeakActivityAnalysis {
+  peakVolume: dailyStats_collection(
+    first: 10
+    orderBy: volume
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    volume
+    tradeCount
+  }
+
+  peakTrades: dailyStats_collection(
+    first: 10
+    orderBy: tradeCount
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    tradeCount
+    volume
+  }
+
+  peakUsers: dailyStats_collection(
+    first: 10
+    orderBy: activeUsers
+    orderDirection: desc
+  ) {
+    id
+    dayTimestamp
+    activeUsers
+    newUsers
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 14: Monthly Growth (client-side aggregation needed)
+# ------------------------------------------------------------------------------
+query MonthlyGrowthData {
+  dailyStats_collection(
+    first: 1000
+    orderBy: dayTimestamp
+    orderDirection: asc
+  ) {
+    dayTimestamp
+    newMarkets
+    newUsers
+    volume
+    tradeCount
+  }
+}

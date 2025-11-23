@@ -1,0 +1,120 @@
+# ==============================================================================
+# 01 - Basic Queries
+# ==============================================================================
+# Simple queries to verify subgraph is working and check basic stats
+# Use these first to confirm everything is operational
+
+# ------------------------------------------------------------------------------
+# Query 1: Health Check - Verify subgraph is responding
+# ------------------------------------------------------------------------------
+query HealthCheck {
+  _meta {
+    block {
+      number
+      timestamp
+    }
+    hasIndexingErrors
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: Global Statistics - Overall protocol metrics
+# ------------------------------------------------------------------------------
+query GlobalStatistics {
+  globalStats(id: "global") {
+    totalMarkets
+    resolvedMarkets
+    totalTrades
+    totalVolume
+    totalFees
+    totalUsers
+    lastUpdatedBlock
+    lastUpdatedTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 3: Data Coverage Check - How much data do we have?
+# ------------------------------------------------------------------------------
+query DataCoverage {
+  _meta {
+    block {
+      number
+      timestamp
+    }
+    hasIndexingErrors
+  }
+  globalStats(id: "global") {
+    totalMarkets
+    totalTrades
+    totalUsers
+  }
+  markets(first: 1) {
+    id
+  }
+  trades(first: 1) {
+    id
+  }
+  users(first: 1) {
+    id
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 4: Entity Counts - Count of each entity type
+# ------------------------------------------------------------------------------
+query EntityCounts {
+  markets(first: 1000) {
+    id
+  }
+  trades(first: 1) {
+    id
+  }
+  users(first: 1) {
+    id
+  }
+  positions(first: 1) {
+    id
+  }
+  dailyStats(first: 1) {
+    id
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 5: Latest Activity - Most recent events
+# ------------------------------------------------------------------------------
+query LatestActivity {
+  trades(first: 5, orderBy: timestamp, orderDirection: desc) {
+    id
+    timestamp
+    market { id }
+    trader { id }
+    side
+    amount
+    price
+  }
+  markets(first: 5, orderBy: creationTimestamp, orderDirection: desc) {
+    id
+    creationTimestamp
+    outcomeSlotCount
+    resolved
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: Sync Progress - Check indexing progress
+# ------------------------------------------------------------------------------
+query SyncProgress {
+  _meta {
+    block {
+      number
+      timestamp
+    }
+    hasIndexingErrors
+  }
+  globalStats(id: "global") {
+    lastUpdatedBlock
+    lastUpdatedTimestamp
+  }
+}

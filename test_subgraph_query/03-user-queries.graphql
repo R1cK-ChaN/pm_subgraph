@@ -1,0 +1,238 @@
+# ==============================================================================
+# 03 - User Queries
+# ==============================================================================
+# Queries for user/trader profiles, statistics, and behavior
+
+# ------------------------------------------------------------------------------
+# Query 1: Top Traders by Volume
+# ------------------------------------------------------------------------------
+query TopTradersByVolume {
+  users(
+    first: 50
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: Most Active Traders by Trade Count
+# ------------------------------------------------------------------------------
+query MostActiveTraders {
+  users(
+    first: 50
+    orderBy: tradeCount
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 3: Newest Traders
+# ------------------------------------------------------------------------------
+query NewestTraders {
+  users(
+    first: 50
+    orderBy: firstTradeTimestamp
+    orderDirection: desc
+    where: { firstTradeTimestamp_not: null }
+  ) {
+    id
+    tradeCount
+    totalVolume
+    marketsTraded
+    firstTradeTimestamp
+    firstTradeBlock
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 4: Specific User Profile
+# ------------------------------------------------------------------------------
+query UserProfile($userAddress: ID!) {
+  user(id: $userAddress) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+    firstTradeBlock
+    trades(first: 10, orderBy: timestamp, orderDirection: desc) {
+      id
+      market { id }
+      side
+      amount
+      price
+      cost
+      timestamp
+    }
+    positions(
+      first: 20
+      where: { balance_gt: "0" }
+      orderBy: balance
+      orderDirection: desc
+    ) {
+      market { id }
+      tokenId
+      outcomeIndex
+      balance
+      avgBuyPrice
+      avgSellPrice
+      realizedPnL
+      tradeCount
+    }
+  }
+}
+
+# Variables:
+# {
+#   "userAddress": "0x..."
+# }
+
+# ------------------------------------------------------------------------------
+# Query 5: Whale Traders (>$1M volume)
+# ------------------------------------------------------------------------------
+query WhaleTraders {
+  users(
+    first: 100
+    where: { totalVolume_gt: "1000000000000" }  # >1M USDC (6 decimals)
+    orderBy: totalVolume
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: Multi-Market Traders
+# ------------------------------------------------------------------------------
+query MultiMarketTraders {
+  users(
+    first: 100
+    where: { marketsTraded_gt: 10 }
+    orderBy: marketsTraded
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    marketsTraded
+    totalFeesPaid
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 7: User Market Participation
+# ------------------------------------------------------------------------------
+query UserMarketParticipation($userAddress: ID!) {
+  user(id: $userAddress) {
+    id
+    marketParticipations(
+      first: 50
+      orderBy: volume
+      orderDirection: desc
+    ) {
+      market {
+        id
+        outcomeSlotCount
+        resolved
+        winningOutcome
+      }
+      tradeCount
+      volume
+      firstTradeTimestamp
+      lastTradeTimestamp
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 8: Recently Active Users
+# ------------------------------------------------------------------------------
+query RecentlyActiveUsers {
+  users(
+    first: 50
+    orderBy: lastTradeTimestamp
+    orderDirection: desc
+    where: { lastTradeTimestamp_not: null }
+  ) {
+    id
+    tradeCount
+    totalVolume
+    marketsTraded
+    lastTradeTimestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 9: High Fee Payers (potential arbitrageurs)
+# ------------------------------------------------------------------------------
+query HighFeePayers {
+  users(
+    first: 50
+    orderBy: totalFeesPaid
+    orderDirection: desc
+  ) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 10: User Trading Summary
+# ------------------------------------------------------------------------------
+query UserTradingSummary($userAddress: ID!) {
+  user(id: $userAddress) {
+    id
+    tradeCount
+    totalVolume
+    totalFeesPaid
+    marketsTraded
+    firstTradeTimestamp
+    lastTradeTimestamp
+
+    # Recent trades
+    trades(first: 5, orderBy: timestamp, orderDirection: desc) {
+      id
+      side
+      amount
+      price
+      cost
+      timestamp
+      market { id }
+    }
+
+    # Active positions
+    positions(where: { balance_gt: "0" }, first: 10) {
+      market { id }
+      outcomeIndex
+      balance
+      avgBuyPrice
+      realizedPnL
+    }
+  }
+}

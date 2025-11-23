@@ -1,0 +1,312 @@
+# ==============================================================================
+# 05 - Position Queries
+# ==============================================================================
+# Queries for user positions, holdings, and PnL analysis
+
+# ------------------------------------------------------------------------------
+# Query 1: Active Positions (balance > 0)
+# ------------------------------------------------------------------------------
+query ActivePositions {
+  positions(
+    first: 100
+    where: { balance_gt: "0" }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    user { id }
+    market {
+      id
+      outcomeSlotCount
+      resolved
+      winningOutcome
+    }
+    tokenId
+    outcomeIndex
+    balance
+    totalBought
+    totalSold
+    avgBuyPrice
+    avgSellPrice
+    realizedPnL
+    tradeCount
+    lastUpdated
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: User Positions
+# ------------------------------------------------------------------------------
+query UserPositions($userAddress: ID!) {
+  positions(
+    where: { user: $userAddress }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    market {
+      id
+      outcomeSlotCount
+      resolved
+      winningOutcome
+      resolutionTimestamp
+    }
+    tokenId
+    outcomeIndex
+    balance
+    totalBought
+    totalSold
+    avgBuyPrice
+    avgSellPrice
+    realizedPnL
+    tradeCount
+    lastUpdated
+  }
+}
+
+# Variables:
+# {
+#   "userAddress": "0x..."
+# }
+
+# ------------------------------------------------------------------------------
+# Query 3: User Active Positions Only
+# ------------------------------------------------------------------------------
+query UserActivePositions($userAddress: ID!) {
+  positions(
+    where: {
+      user: $userAddress
+      balance_gt: "0"
+    }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    market {
+      id
+      resolved
+      outcomeSlotCount
+    }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    realizedPnL
+    lastUpdated
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 4: Largest Positions
+# ------------------------------------------------------------------------------
+query LargestPositions {
+  positions(
+    first: 100
+    orderBy: balance
+    orderDirection: desc
+    where: { balance_gt: "0" }
+  ) {
+    id
+    user { id }
+    market { id }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    totalBought
+    totalSold
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 5: Most Profitable Positions (Realized PnL)
+# ------------------------------------------------------------------------------
+query MostProfitablePositions {
+  positions(
+    first: 100
+    where: { realizedPnL_gt: "0" }
+    orderBy: realizedPnL
+    orderDirection: desc
+  ) {
+    id
+    user { id }
+    market {
+      id
+      resolved
+      winningOutcome
+    }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    avgSellPrice
+    realizedPnL
+    totalBought
+    totalSold
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: Biggest Losses (Realized PnL)
+# ------------------------------------------------------------------------------
+query BiggestLosses {
+  positions(
+    first: 100
+    where: { realizedPnL_lt: "0" }
+    orderBy: realizedPnL
+    orderDirection: asc
+  ) {
+    id
+    user { id }
+    market { id }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    avgSellPrice
+    realizedPnL
+    totalBought
+    totalSold
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 7: Positions in Specific Market
+# ------------------------------------------------------------------------------
+query MarketPositions($marketId: ID!) {
+  positions(
+    where: {
+      market: $marketId
+      balance_gt: "0"
+    }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    user { id }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    realizedPnL
+    tradeCount
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 8: High Trade Count Positions
+# ------------------------------------------------------------------------------
+query ActiveTradingPositions {
+  positions(
+    first: 100
+    where: { tradeCount_gt: 10 }
+    orderBy: tradeCount
+    orderDirection: desc
+  ) {
+    id
+    user { id }
+    market { id }
+    outcomeIndex
+    balance
+    tradeCount
+    avgBuyPrice
+    avgSellPrice
+    realizedPnL
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 9: User Position PnL Summary
+# ------------------------------------------------------------------------------
+query UserPnLSummary($userAddress: ID!) {
+  user(id: $userAddress) {
+    id
+    totalVolume
+    totalFeesPaid
+    positions(
+      orderBy: realizedPnL
+      orderDirection: desc
+    ) {
+      market {
+        id
+        resolved
+        winningOutcome
+      }
+      outcomeIndex
+      balance
+      avgBuyPrice
+      avgSellPrice
+      realizedPnL
+      totalBought
+      totalSold
+    }
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 10: Positions with Unrealized Gains
+# ------------------------------------------------------------------------------
+query UnrealizedGains {
+  positions(
+    first: 100
+    where: {
+      balance_gt: "0"
+      avgBuyPrice_lt: "0.5"  # Bought low
+    }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    user { id }
+    market {
+      id
+      resolved
+    }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    realizedPnL
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 11: Positions in Unresolved Markets
+# ------------------------------------------------------------------------------
+query OpenMarketPositions {
+  positions(
+    first: 100
+    where: { balance_gt: "0" }
+    orderBy: balance
+    orderDirection: desc
+  ) {
+    id
+    user { id }
+    market {
+      id
+      resolved
+      outcomeSlotCount
+      tradeCount
+      totalVolume
+    }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    realizedPnL
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 12: User Position Distribution
+# ------------------------------------------------------------------------------
+query UserPositionDistribution($userAddress: ID!) {
+  positions(
+    where: { user: $userAddress }
+  ) {
+    id
+    market {
+      id
+      outcomeSlotCount
+      resolved
+    }
+    outcomeIndex
+    balance
+    avgBuyPrice
+    realizedPnL
+    tradeCount
+  }
+}

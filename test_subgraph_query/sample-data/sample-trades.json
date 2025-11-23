@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "0xf3a31719309b88f1d6017559949541ffe2eea7a0442f1791b397f250ae1d6596-135",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "433915210",
+    "price": "0.4009999995160344805613059749622513",
+    "cost": "173999999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xf3a31719309b88f1d6017559949541ffe2eea7a0442f1791b397f250ae1d6596-133",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xdcc9959101f564290324aa059544b5215fdbefb0"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "433915210",
+    "price": "0.5990000004839655194386940250377487",
+    "cost": "259915211",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xe72e38cb3570192be60941332339de3c18504e2e7f233e19b6d0129062f5631c-299",
+    "market": {
+      "id": "0xf1f68f8726c496661aa48560424dda3203b709fb76abb79c29aa16d4eb8911fc"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "9440000",
+    "price": "0.996",
+    "cost": "9402240",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xe72e38cb3570192be60941332339de3c18504e2e7f233e19b6d0129062f5631c-297",
+    "market": {
+      "id": "0xf1f68f8726c496661aa48560424dda3203b709fb76abb79c29aa16d4eb8911fc"
+    },
+    "trader": {
+      "id": "0xe2c585e4d00e9251d76dead886b0fab9135e14b3"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "9440000",
+    "price": "0.004",
+    "cost": "37760",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xe37c8c274a18f13470b7408d442c84b3fc49792200d439461b1143c79db1217b-115",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "436907729",
+    "price": "0.4009999992469805907233103674391624",
+    "cost": "175199999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xe37c8c274a18f13470b7408d442c84b3fc49792200d439461b1143c79db1217b-113",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xaefcf7492010564b0811f375fdc02d97752a095c"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "436907729",
+    "price": "0.5990000007530194092766896325608376",
+    "cost": "261707730",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xc4299080904728fadf1c9b2e397acb9d1c5cca860e61e9ab0aaa560183f54eb6-154",
+    "market": {
+      "id": "0x3c0d3b759bee203b521c9c2e2c26cd4afb608d988a3cc585101edbf69c30b9a7"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "187470000",
+    "price": "0.08106683736064436976582919933856084",
+    "cost": "15197600",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xc4299080904728fadf1c9b2e397acb9d1c5cca860e61e9ab0aaa560183f54eb6-152",
+    "market": {
+      "id": "0x3c0d3b759bee203b521c9c2e2c26cd4afb608d988a3cc585101edbf69c30b9a7"
+    },
+    "trader": {
+      "id": "0x8e8d8163c34d90ce063c7438637a0e5c3ffa5a27"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "167470000",
+    "price": "0.08",
+    "cost": "13397600",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xc4299080904728fadf1c9b2e397acb9d1c5cca860e61e9ab0aaa560183f54eb6-148",
+    "market": {
+      "id": "0x3c0d3b759bee203b521c9c2e2c26cd4afb608d988a3cc585101edbf69c30b9a7"
+    },
+    "trader": {
+      "id": "0x8e8d8163c34d90ce063c7438637a0e5c3ffa5a27"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "20000000",
+    "price": "0.91",
+    "cost": "18200000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xba621383b2a2f3390566c3b2888be6fd8058e75ad4c2cdc4e65715f71a32c04e-75",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "38250000",
+    "price": "0.6",
+    "cost": "22950000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xba621383b2a2f3390566c3b2888be6fd8058e75ad4c2cdc4e65715f71a32c04e-73",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x88708d414d642c8f724375c2cfa3c45934c1b1ec"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "38250000",
+    "price": "0.4",
+    "cost": "15300000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xab2b0d55a1da6f94a14dd42132452dc5f23ac4094553b0a43bf5388be6d2b218-274",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "186066665",
+    "price": "0.6",
+    "cost": "111639999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xab2b0d55a1da6f94a14dd42132452dc5f23ac4094553b0a43bf5388be6d2b218-272",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x8b5334b42e254ceabee57f53db1174da4452c308"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "186066665",
+    "price": "0.4",
+    "cost": "74426666",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x86a8aa71e8be183139607ad57e5fbc848b5fef3afd4a15c2169025b57f1bb5e9-55",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "69030000",
+    "price": "0.4",
+    "cost": "27612000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x86a8aa71e8be183139607ad57e5fbc848b5fef3afd4a15c2169025b57f1bb5e9-53",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xa0474990b1123952ddd50fca203aa5bd3ed8c583"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "69030000",
+    "price": "0.4",
+    "cost": "27612000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x7d5afa00116a9905814f425b241d037a9d42d53e1b341856df0d89e3a1dd1a3f-319",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "448000000",
+    "price": "0.6",
+    "cost": "268800000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x7d5afa00116a9905814f425b241d037a9d42d53e1b341856df0d89e3a1dd1a3f-317",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x0a661e1f59c72c94d45ccee914c4f971917bd9f2"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "448000000",
+    "price": "0.4",
+    "cost": "179200000",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x5fbbd9bb74bbda07d4b88bf9c061105e19696f361549bf4bce4c2bea512dd06d-174",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "430498752",
+    "price": "0.4009999987177663177058408754690188",
+    "cost": "172629999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x5fbbd9bb74bbda07d4b88bf9c061105e19696f361549bf4bce4c2bea512dd06d-172",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0x91e5782ae38baa67f7e13aa475a3513a8cc92ecb"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "430498752",
+    "price": "0.5990000012822336822941591245309812",
+    "cost": "257868753",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x5f799d0596b597a5c366e367f6168b7c02b9992d82ee234c55041dd0c788803a-234",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "453366582",
+    "price": "0.400999999157414738609913687903887",
+    "cost": "181799999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x5f799d0596b597a5c366e367f6168b7c02b9992d82ee234c55041dd0c788803a-232",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0x51e50e138848bc719e123519603d1a04a359ae6b"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "453366582",
+    "price": "0.599000000842585261390086312096113",
+    "cost": "271566583",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x51eddc0c6d00caae06798e44f8e98ac7e7214f26d419523685af518266986f99-339",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "463192018",
+    "price": "0.4009999995293528568534184023870636",
+    "cost": "185739999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x51eddc0c6d00caae06798e44f8e98ac7e7214f26d419523685af518266986f99-337",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xbf0fd4da02b61f9e8e4d51690b2f56c50e651d48"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "463192018",
+    "price": "0.5990000004706471431465815976129364",
+    "cost": "277452019",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x4e81d4078546726c648e9a37da1860b19d46487ae666814779a6b1ca12e21681-214",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "67705734",
+    "price": "0.4009999950668875401306483140704154",
+    "cost": "27149999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x4e81d4078546726c648e9a37da1860b19d46487ae666814779a6b1ca12e21681-212",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xb4ae91a693ce669e39ae6092b27e3a919a4852c1"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "67705734",
+    "price": "0.5990000049331124598693516859295846",
+    "cost": "40555735",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3ce431210aa88af584f0eafa49fc0a4499d30e815d9d00c1500c60c3f3712d84-194",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "458977555",
+    "price": "0.4009999987907905431236174500951359",
+    "cost": "184049999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3ce431210aa88af584f0eafa49fc0a4499d30e815d9d00c1500c60c3f3712d84-192",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0x9d0b72c0c1432006de806d223369b0f9616de209"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "458977555",
+    "price": "0.5990000012092094568763825499048641",
+    "cost": "274927556",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3750aad2a5fd3a806778b63abb59c65ad12fd1fafcb7af70fbfe1cb2b1ed5b50-95",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "442144637",
+    "price": "0.4009999990116356426596213582479798",
+    "cost": "177299999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3750aad2a5fd3a806778b63abb59c65ad12fd1fafcb7af70fbfe1cb2b1ed5b50-93",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0x6423de4148f6372a07931fe1338c5af76c770e00"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "442144637",
+    "price": "0.5990000009883643573403786417520202",
+    "cost": "264844638",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x22f53f1d515c2ec359d5d40e0f79f0c2b36aeb1b8f5ae3672d938e0aeae1ed05-254",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "454688278",
+    "price": "0.4009999989487303211278299107592125",
+    "cost": "182329999",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x22f53f1d515c2ec359d5d40e0f79f0c2b36aeb1b8f5ae3672d938e0aeae1ed05-252",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xa814f6457eb21cbb9ff9608bf355b37954970714"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "454688278",
+    "price": "0.5990000010512696788721700892407875",
+    "cost": "272358279",
+    "fee": "0",
+    "timestamp": "1729741904",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xfb1bdeea47f92a4707b83fbf0a631aa85e34191eab42469dd8387252ad8423d6-149",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "40150000",
+    "price": "0.6",
+    "cost": "24090000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xfb1bdeea47f92a4707b83fbf0a631aa85e34191eab42469dd8387252ad8423d6-147",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xe7462aeb3243d6a6c069e0f0c6742da316a96cdd"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "40150000",
+    "price": "0.4",
+    "cost": "16060000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x64267344c2fe49f839e84675e33dde4d995b1dd6a8ed0fa8ef5e4cca914439df-108",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "268240000",
+    "price": "0.4",
+    "cost": "107296000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x64267344c2fe49f839e84675e33dde4d995b1dd6a8ed0fa8ef5e4cca914439df-106",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x8d7727ae3cabc855ce4502727fe5fb00e8dd7ae5"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "268240000",
+    "price": "0.4",
+    "cost": "107296000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x5c61afff2ef1080dac19a77609b2c64aaade757821c39135884d283ab273e968-99",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "262910000",
+    "price": "0.4",
+    "cost": "105164000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x5c61afff2ef1080dac19a77609b2c64aaade757821c39135884d283ab273e968-97",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xdb06e52c72889f1e4bac1bd602901e938b8dd83d"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "262910000",
+    "price": "0.4",
+    "cost": "105164000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x46f20bfc4e329e3ae9bd9c1429754c4a911a546647b2b7437f3a98720c666a84-127",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "20150000",
+    "price": "0.599",
+    "cost": "12069850",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x46f20bfc4e329e3ae9bd9c1429754c4a911a546647b2b7437f3a98720c666a84-125",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xb22e27711c1658ec3043b0b6e90771cb293781fd"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "20150000",
+    "price": "0.599",
+    "cost": "12069850",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x44cd8a219388caf4de9f2eb5cee0af961642c071027893d1453d740c0abbe21b-169",
+    "market": {
+      "id": "0xd3ba7529a09565c7b00390e2f0f8440e30e48bb7216e7e6fa5d65e545db1862e"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "24000000",
+    "price": "0.998",
+    "cost": "23952000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x44cd8a219388caf4de9f2eb5cee0af961642c071027893d1453d740c0abbe21b-167",
+    "market": {
+      "id": "0xd3ba7529a09565c7b00390e2f0f8440e30e48bb7216e7e6fa5d65e545db1862e"
+    },
+    "trader": {
+      "id": "0xaf487400e6b3badf865c5ab4f7062d15355c6213"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "24000000",
+    "price": "0.002",
+    "cost": "48000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3fce0bfbca6b69932a57b9a8e4b6eca79078475da28b578644dc027a8365dabb-90",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "63640000",
+    "price": "0.4",
+    "cost": "25456000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3fce0bfbca6b69932a57b9a8e4b6eca79078475da28b578644dc027a8365dabb-88",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x24299a7a6816286a0942211397dddeb38021aa60"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "63640000",
+    "price": "0.4",
+    "cost": "25456000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3ba6503a9aea228521f533239eed3713b40a7cf771961676cd9e25866a084872-72",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "55010000",
+    "price": "0.4",
+    "cost": "22004000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3ba6503a9aea228521f533239eed3713b40a7cf771961676cd9e25866a084872-70",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xaf4154b45819e6867128f4d4dbd6efb1960dfd02"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "55010000",
+    "price": "0.4",
+    "cost": "22004000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x286c975399460892d6734b1772f6bd49592a8977dde808f7602768f9c6427b78-63",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "306360000",
+    "price": "0.599",
+    "cost": "183509640",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x286c975399460892d6734b1772f6bd49592a8977dde808f7602768f9c6427b78-61",
+    "market": {
+      "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638"
+    },
+    "trader": {
+      "id": "0xd1ab73af3b509c6e6f7b14e8116ad8aea9c80e87"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "306360000",
+    "price": "0.599",
+    "cost": "183509640",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x132e59be37b02823ae36f8f4b0be94a17fa9639bc16fe279b1b2d4960558b787-81",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "68000000",
+    "price": "0.599",
+    "cost": "40732000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x132e59be37b02823ae36f8f4b0be94a17fa9639bc16fe279b1b2d4960558b787-79",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x7a512d13f52e83d9bbfd8b7539048368f5b3e067"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "68000000",
+    "price": "0.599",
+    "cost": "40732000",
+    "fee": "0",
+    "timestamp": "1729741902",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xd1c0409b0599a778798564e613f46b001bc41f409a50c1b509701cf7c20663a9-119",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "438900000",
+    "price": "0.4",
+    "cost": "175560000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xd1c0409b0599a778798564e613f46b001bc41f409a50c1b509701cf7c20663a9-117",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x960ba46742ab1bd18e9197ea733cab2dae32063b"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "438900000",
+    "price": "0.4",
+    "cost": "175560000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x81eb8e6a10798fb4f9f2801f10bcec8e985ce5474a3ebcb8a4c1df4f6de3e8c8-110",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "409650871",
+    "price": "0.4009999993384610672535345347770541",
+    "cost": "164269999",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x81eb8e6a10798fb4f9f2801f10bcec8e985ce5474a3ebcb8a4c1df4f6de3e8c8-108",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xe937a98dec21e861ce9902588c80fba8700734bb"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "409650871",
+    "price": "0.5990000006615389327464654652229459",
+    "cost": "245380872",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x7a519176defe15c29aff431f1e582ac9f353ad4350fd090a88dae96afbfa9fee-62",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "409351619",
+    "price": "0.4009999994650076124408830052776706",
+    "cost": "164149999",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x7a519176defe15c29aff431f1e582ac9f353ad4350fd090a88dae96afbfa9fee-60",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc57002b0bcf05988af0c67fdcdb1d76b8046da52"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "409351619",
+    "price": "0.5990000005349923875591169947223294",
+    "cost": "245201620",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x2f08ff9ea9f4e7409a7c402f4028ac90cb555a3308893a882369e814d516d71f-146",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "44250000",
+    "price": "0.6",
+    "cost": "26550000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x2f08ff9ea9f4e7409a7c402f4028ac90cb555a3308893a882369e814d516d71f-144",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xd698709f46e1bbbeb640ed3311a54e9c98a9502b"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "44250000",
+    "price": "0.4",
+    "cost": "17700000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x232a8989910b8704e8f621d1bf6376704f591640b898c3175ff7babd84dd2900-88",
+    "market": {
+      "id": "0x272461ac34da7a85f4c7f6cad291b10b9268061e5813cad8c9cb9897cf0d94a9"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "5750000000",
+    "price": "0.06",
+    "cost": "345000000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x232a8989910b8704e8f621d1bf6376704f591640b898c3175ff7babd84dd2900-86",
+    "market": {
+      "id": "0x272461ac34da7a85f4c7f6cad291b10b9268061e5813cad8c9cb9897cf0d94a9"
+    },
+    "trader": {
+      "id": "0xfb5b7992cc2182a73f3d99b6b7835b8a8835df8d"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "4460000000",
+    "price": "0.06",
+    "cost": "267600000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x232a8989910b8704e8f621d1bf6376704f591640b898c3175ff7babd84dd2900-83",
+    "market": {
+      "id": "0x272461ac34da7a85f4c7f6cad291b10b9268061e5813cad8c9cb9897cf0d94a9"
+    },
+    "trader": {
+      "id": "0xfb5b7992cc2182a73f3d99b6b7835b8a8835df8d"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "540000000",
+    "price": "0.94",
+    "cost": "507600000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x232a8989910b8704e8f621d1bf6376704f591640b898c3175ff7babd84dd2900-69",
+    "market": {
+      "id": "0x272461ac34da7a85f4c7f6cad291b10b9268061e5813cad8c9cb9897cf0d94a9"
+    },
+    "trader": {
+      "id": "0xfb5b7992cc2182a73f3d99b6b7835b8a8835df8d"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "750000000",
+    "price": "0.06",
+    "cost": "45000000",
+    "fee": "0",
+    "timestamp": "1729741900",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xeffa64f0dd6bf8dded81de223d39aa79b6835e907bb3c06455c49ffd6d6b5527-195",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "393316707",
+    "price": "0.4009999987109624610988111420347064",
+    "cost": "157719999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xeffa64f0dd6bf8dded81de223d39aa79b6835e907bb3c06455c49ffd6d6b5527-193",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x624d5ca8e078f35ef36098132df60d53572b2bd1"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "393316707",
+    "price": "0.5990000012890375389011888579652936",
+    "cost": "235596708",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xeaaf826eb9e6c66c0b9de4f338f66bca485fa029d4b064a630526e234779a54a-129",
+    "market": {
+      "id": "0xcd1b6b71a1964f15e2c14809594cbfa0d576270e8ef94c8c24913121097e09e5"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "2320000",
+    "price": "0.616",
+    "cost": "1429120",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xeaaf826eb9e6c66c0b9de4f338f66bca485fa029d4b064a630526e234779a54a-127",
+    "market": {
+      "id": "0xcd1b6b71a1964f15e2c14809594cbfa0d576270e8ef94c8c24913121097e09e5"
+    },
+    "trader": {
+      "id": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "2320000",
+    "price": "0.384",
+    "cost": "890880",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xda93b1fb68ccf4e0df06740ddf277e182242b7586a431b6217b5cdf623c10c95-305",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "430897754",
+    "price": "0.4009999991784593985142934859669749",
+    "cost": "172789999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xda93b1fb68ccf4e0df06740ddf277e182242b7586a431b6217b5cdf623c10c95-303",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xdbb2da942dda67cf54c3956dc680aa19fcc43777"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "430897754",
+    "price": "0.5990000008215406014857065140330251",
+    "cost": "258107755",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xd6977710dba11e8042378d65b642ee6cd1f801e92b92d7e442cb6bfea221a3c9-149",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "429002492",
+    "price": "0.4009999993193512731389914630146251",
+    "cost": "172029999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xd6977710dba11e8042378d65b642ee6cd1f801e92b92d7e442cb6bfea221a3c9-147",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x5f81114bfffcb5342fa43fe5badb200cbdb5f858"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "429002492",
+    "price": "0.5990000006806487268610085369853749",
+    "cost": "256972493",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xb8219f3a77303a81452d75156da2d466c5e5ba2e0394131f01e2633d47f2e9ef-70",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "403541146",
+    "price": "0.4009999986469781200452852953933971",
+    "cost": "161819999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xb8219f3a77303a81452d75156da2d466c5e5ba2e0394131f01e2633d47f2e9ef-68",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x96b3200ad9f342d90bd39a3c70f6c78a8eef4ce4"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "403541146",
+    "price": "0.5990000013530218799547147046066029",
+    "cost": "241721147",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xb6eca7ee9abc21d2a78a7ddc8e0248530ce412f751ebf9c5ada175ad8320f79a-265",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "65910000",
+    "price": "0.4",
+    "cost": "26364000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xb6eca7ee9abc21d2a78a7ddc8e0248530ce412f751ebf9c5ada175ad8320f79a-263",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xa558df2f01ffad31b7b6c55a3e2af47446238e5b"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "65910000",
+    "price": "0.4",
+    "cost": "26364000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xaffbd2ca7f7836604c23b66497a4a95946b427419836623feac1d37b91340d53-235",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "406957604",
+    "price": "0.4009999994987192818247475233316933",
+    "cost": "163189999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xaffbd2ca7f7836604c23b66497a4a95946b427419836623feac1d37b91340d53-233",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xebe77329c0367a25ed5f3d85494a6ce76986b3f4"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "406957604",
+    "price": "0.5990000005012807181752524766683067",
+    "cost": "243767605",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x59d4d9de2f3b3639b97d267d00cf855b09ffa0433ba07762a661c1e59be65edc-285",
+    "market": {
+      "id": "0x6cf8b2ebe77711ab5c32fac330b8d493640cf25d278fa98bf65ddcfcb891171e"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "22000000",
+    "price": "0.977",
+    "cost": "21494000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x59d4d9de2f3b3639b97d267d00cf855b09ffa0433ba07762a661c1e59be65edc-283",
+    "market": {
+      "id": "0x6cf8b2ebe77711ab5c32fac330b8d493640cf25d278fa98bf65ddcfcb891171e"
+    },
+    "trader": {
+      "id": "0x1673d9447774537b8b42a3842fe33625de8bac51"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "22000000",
+    "price": "0.023",
+    "cost": "506000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x497a18b21c1750bfe281a612e2deaf621443261b780ad34be5768d4e10e3f70a-247",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "35000000",
+    "price": "0.4",
+    "cost": "14000000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x497a18b21c1750bfe281a612e2deaf621443261b780ad34be5768d4e10e3f70a-245",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x7909cde03e7c5a12417a8257df0612888a33ba1e"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "35000000",
+    "price": "0.4",
+    "cost": "14000000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x4885459e98a8f3694e5cad8cd019b7ed9c467e88a0cd20a5e85e98db6dff1f08-256",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "66230000",
+    "price": "0.4",
+    "cost": "26492000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x4885459e98a8f3694e5cad8cd019b7ed9c467e88a0cd20a5e85e98db6dff1f08-254",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x9177aa738d8c86df15c2e7b32b70cd71cf17720d"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "66230000",
+    "price": "0.4",
+    "cost": "26492000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3584e110b261ec6d4eaa4440c72b0ddb83f93eb44e8dfdff7753f53afd13c281-215",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "43383332",
+    "price": "0.5999999953899345490567667785406617",
+    "cost": "26029999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x3584e110b261ec6d4eaa4440c72b0ddb83f93eb44e8dfdff7753f53afd13c281-213",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x9368182c7119e52534c3b3c0a728046defd9c4ff"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "43383332",
+    "price": "0.4000000046100654509432332214593383",
+    "cost": "17353333",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x263480586fc91d4759d10609296b335c68494c727667565c040b4723d2e703d0-99",
+    "market": {
+      "id": "0xe41df5757b4888e22f0f3ef70757dd4ff5d8099610c1150bbb20e9b59fdd61f3"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "20000000",
+    "price": "0.12",
+    "cost": "2400000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x263480586fc91d4759d10609296b335c68494c727667565c040b4723d2e703d0-97",
+    "market": {
+      "id": "0xe41df5757b4888e22f0f3ef70757dd4ff5d8099610c1150bbb20e9b59fdd61f3"
+    },
+    "trader": {
+      "id": "0xafe4e5c33388f4f79b018a28a624441d14c1d91e"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "20000000",
+    "price": "0.12",
+    "cost": "2400000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x0ad0b3ca3726a746e85cd659b7fbd43510e4f9e83c87b2e616d3b6e157ff5d34-90",
+    "market": {
+      "id": "0xcd1b6b71a1964f15e2c14809594cbfa0d576270e8ef94c8c24913121097e09e5"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "1070000000",
+    "price": "0.616",
+    "cost": "659120000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x0ad0b3ca3726a746e85cd659b7fbd43510e4f9e83c87b2e616d3b6e157ff5d34-88",
+    "market": {
+      "id": "0xcd1b6b71a1964f15e2c14809594cbfa0d576270e8ef94c8c24913121097e09e5"
+    },
+    "trader": {
+      "id": "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "1070000000",
+    "price": "0.384",
+    "cost": "410880000",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x07a431141744b0195c31fa1f4579d754d6dc6457af128d55b71898be0564592b-173",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "403915210",
+    "price": "0.4009999994800889028170045886610707",
+    "cost": "161969999",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x07a431141744b0195c31fa1f4579d754d6dc6457af128d55b71898be0564592b-171",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x3b057eeb9685f23849fa823899981c91e58bbd6d"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "403915210",
+    "price": "0.5990000005199110971829954113389293",
+    "cost": "241945211",
+    "fee": "0",
+    "timestamp": "1729741898",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xf8b201c471635bf6780366e9f261f24010046c3968694d9faed27619cf89ce28-225",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "BUY",
+    "amount": "41830000",
+    "price": "0.599",
+    "cost": "25056170",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xf8b201c471635bf6780366e9f261f24010046c3968694d9faed27619cf89ce28-223",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xe7ba523ed217cf422c7561dccf9b851c254b307d"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "41830000",
+    "price": "0.599",
+    "cost": "25056170",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xd1932152623da97d1e73101a1c52c320c77050d9adf52c8c318cd7390f57f65b-274",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "41816665",
+    "price": "0.6",
+    "cost": "25089999",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xd1932152623da97d1e73101a1c52c320c77050d9adf52c8c318cd7390f57f65b-272",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xe6f6be6b39def3eb34ae18ac716bf0b14f28aeb3"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "41816665",
+    "price": "0.4",
+    "cost": "16726666",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xccaf8653902ffe1efce16e5a7752c54e5639211d056d615900356ea783820796-114",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "36033332",
+    "price": "0.5999999944495835133980948528434728",
+    "cost": "21619999",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xccaf8653902ffe1efce16e5a7752c54e5639211d056d615900356ea783820796-112",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xf4001a4557944477621e87c476fcb01f04405282"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "36033332",
+    "price": "0.4000000055504164866019051471565272",
+    "cost": "14413333",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xc63f020ee4671f562f06b446439dea7eea080b118c2efdef39da9bdd58e1d9d1-364",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "36400000",
+    "price": "0.6",
+    "cost": "21840000",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xc63f020ee4671f562f06b446439dea7eea080b118c2efdef39da9bdd58e1d9d1-362",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0x329a33913547fb08b6ef51776c6d8752cc7d01bb"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "36400000",
+    "price": "0.4",
+    "cost": "14560000",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xa9c96112490aafb7915875a90bed38e495436b17b13f52536cc4a6eca5e85230-65",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 0,
+    "side": "SELL",
+    "amount": "43183332",
+    "price": "0.5999999953685834154715064599461663",
+    "cost": "25909999",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0xa9c96112490aafb7915875a90bed38e495436b17b13f52536cc4a6eca5e85230-63",
+    "market": {
+      "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"
+    },
+    "trader": {
+      "id": "0xda9e0ea5c923218bee865ec39ab0791e90b78db9"
+    },
+    "outcomeIndex": 1,
+    "side": "SELL",
+    "amount": "43183332",
+    "price": "0.4000000046314165845284935400538337",
+    "cost": "17273333",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  },
+  {
+    "id": "0x918c8d611ea32071e83d8e82aa4adef261755155ff5f41bd1aea759ac6a467d0-178",
+    "market": {
+      "id": "0xa46150a5692d868952b619c742509efe9281d2aba0fd4df17164e56ab4638790"
+    },
+    "trader": {
+      "id": "0xc5d563a36ae78145c45a50134d48a1215220f80a"
+    },
+    "outcomeIndex": 1,
+    "side": "BUY",
+    "amount": "57000000",
+    "price": "0.997",
+    "cost": "56829000",
+    "fee": "0",
+    "timestamp": "1729741896",
+    "exchange": "negrisk"
+  }
+]

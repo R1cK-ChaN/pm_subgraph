@@ -1,0 +1,285 @@
+# ==============================================================================
+# 04 - Trade Queries
+# ==============================================================================
+# Queries for trade analysis, patterns, and trade history
+
+# ------------------------------------------------------------------------------
+# Query 1: Recent Trades
+# ------------------------------------------------------------------------------
+query RecentTrades {
+  trades(
+    first: 50
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    counterparty { id }
+    tokenId
+    outcomeIndex
+    side
+    amount
+    price
+    cost
+    fee
+    timestamp
+    blockNumber
+    transactionHash
+    exchange
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 2: Large Trades (>$10k)
+# ------------------------------------------------------------------------------
+query LargeTrades {
+  trades(
+    first: 100
+    where: { cost_gt: "10000000000" }  # >10k USDC
+    orderBy: cost
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    side
+    amount
+    price
+    cost
+    fee
+    timestamp
+    exchange
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 3: Trades in Specific Market
+# ------------------------------------------------------------------------------
+query MarketTrades($marketId: ID!) {
+  trades(
+    first: 100
+    where: { market: $marketId }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    trader { id }
+    counterparty { id }
+    outcomeIndex
+    side
+    amount
+    price
+    cost
+    fee
+    timestamp
+    transactionHash
+  }
+}
+
+# Variables:
+# {
+#   "marketId": "0x..."
+# }
+
+# ------------------------------------------------------------------------------
+# Query 4: User Trade History
+# ------------------------------------------------------------------------------
+query UserTradeHistory($userAddress: ID!) {
+  trades(
+    first: 100
+    where: { trader: $userAddress }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market {
+      id
+      outcomeSlotCount
+      resolved
+      winningOutcome
+    }
+    outcomeIndex
+    side
+    amount
+    price
+    cost
+    fee
+    timestamp
+    exchange
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 5: Buy Trades Only
+# ------------------------------------------------------------------------------
+query BuyTrades {
+  trades(
+    first: 100
+    where: { side: "BUY" }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    amount
+    price
+    cost
+    timestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 6: Sell Trades Only
+# ------------------------------------------------------------------------------
+query SellTrades {
+  trades(
+    first: 100
+    where: { side: "SELL" }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    amount
+    price
+    cost
+    timestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 7: Trades by Exchange
+# ------------------------------------------------------------------------------
+query TradesByExchange($exchange: String!) {
+  trades(
+    first: 100
+    where: { exchange: $exchange }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    side
+    amount
+    price
+    cost
+    timestamp
+  }
+}
+
+# Variables (use one of):
+# { "exchange": "LEGACY" }
+# { "exchange": "NEGRISK" }
+
+# ------------------------------------------------------------------------------
+# Query 8: High Price Trades (>0.9)
+# ------------------------------------------------------------------------------
+query HighConfidenceTrades {
+  trades(
+    first: 100
+    where: { price_gt: "0.9" }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    side
+    amount
+    price
+    cost
+    timestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 9: Low Price Trades (<0.1)
+# ------------------------------------------------------------------------------
+query LowConfidenceTrades {
+  trades(
+    first: 100
+    where: { price_lt: "0.1" }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    market { id }
+    trader { id }
+    side
+    amount
+    price
+    cost
+    timestamp
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 10: Trades in Time Range
+# ------------------------------------------------------------------------------
+query TradesInTimeRange($startTime: BigInt!, $endTime: BigInt!) {
+  trades(
+    first: 1000
+    where: {
+      timestamp_gte: $startTime
+      timestamp_lte: $endTime
+    }
+    orderBy: timestamp
+    orderDirection: asc
+  ) {
+    id
+    market { id }
+    trader { id }
+    side
+    amount
+    price
+    cost
+    timestamp
+  }
+}
+
+# Variables example:
+# {
+#   "startTime": "1672531200",  # Jan 1, 2023
+#   "endTime": "1704067200"     # Jan 1, 2024
+# }
+
+# ------------------------------------------------------------------------------
+# Query 11: Market Trade Volume Over Time
+# ------------------------------------------------------------------------------
+query MarketTradeVolume($marketId: ID!) {
+  trades(
+    where: { market: $marketId }
+    orderBy: timestamp
+    orderDirection: asc
+    first: 1000
+  ) {
+    timestamp
+    cost
+    side
+    price
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Query 12: User Trading Pairs
+# ------------------------------------------------------------------------------
+query UserCounterparties($userAddress: ID!) {
+  trades(
+    first: 100
+    where: { trader: $userAddress }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    counterparty { id }
+    market { id }
+    side
+    amount
+    price
+    timestamp
+  }
+}

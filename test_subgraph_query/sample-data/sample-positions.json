@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917-0x6ada66b0220f72b49d81cb8dfeec380b656e4f5fa8a179b371e7628463b4e964",
+    "outcomeIndex": 1,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xced9f9d90c94db9f1e1dbd7d9fba82fe4fa7431c0d4e91e28896c8ac2d6acadd-0x38bd2067fe9951e8d94f7c33d44bf23b6a6c21a22162e7c6b143baabdabb21bd",
+    "outcomeIndex": 1,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638-0xc1a353f7430f9cf45fa3daf1d926bf1e03eea4ab5a9573d807465bf679104775",
+    "outcomeIndex": 1,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xad6d309aaa500d96855996e84da00dfb2379548a693ca684d0877cf94fec05d1-0x44a47b11b2b6b399703070a66d6422f89770d6819b79197b9293eb21e6810894",
+    "outcomeIndex": 0,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x7da35195ac3c7bf167f88ab0c27067a99020e36de67d39968b71d9debcdd925e-0x7cb40b8c20ed9093be049330c19e67ab23e0f8a792cfd554b67a3fc815209df8",
+    "outcomeIndex": 0,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x696baf880832d000a37ea87cc94235b1ac58e7e9fe7a144ccf5d141877629134-0xb9b07d3ef4913deb4b42852758e5b0644ce8972ea8b2183e0bb0913dbbd5fea2",
+    "outcomeIndex": 1,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x40bbdd26dc08406eedcb913efee7f7faddf50e16fc21caedb4972d57fd71e0d1-0xc2b23d596226f96c440d8edf8c22f26afc573c4a869a92afe0f2075965c1c888",
+    "outcomeIndex": 0,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x14018049e265a2d88f284be9588e2e3542e3a3df08ccdb344d28355dd7fdd8ef-0x4cc96bf245f7ede8361da1e82a01faee235738f4cd676fece857cd64193f6e64",
+    "outcomeIndex": 0,
+    "balance": "85406831146281",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x63634b4e14297a748923f86dca4fa0c6c659db0f5fadeeb8e419e48e20759c34-0xb5489ace9db675ee2c510b65936defde2f4337254b611476c07d97d34785bf95",
+    "outcomeIndex": 1,
+    "balance": "85394536972548",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x230144e34a84dfd0ebdc6de7fde37780e28154f6f84dd8880c7f0e58d302d448-0xe124f5bad9d9689f547aee2a9533e403d54c2e9d1a29815870a71033fa6db553",
+    "outcomeIndex": 1,
+    "balance": "85394536972548",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xf6106065ec5d5dae7eca350be64e5246ae331b35937ea55b64152f65fbc0b37f-0x6a17053786bd7335941c5fbc31e0749db982fddd4447111a37349ffd8f99d258",
+    "outcomeIndex": 1,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xd1cce1f51effdf3957144fdc87b5e8aace1d1f7ab21976a046b71744ecad8443-0x5cc1665d17f1f59239cd67b75488c3f667e13190495aba5abb1a54fd3547a2b0",
+    "outcomeIndex": 1,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xb92f22143e7b48609a82573fa8197dc73683a15acb467b0f51ee63da7e3f520b-0xe4eb66b6b220accb5478a5d35d5c2785b9f39bf940c0100ca943966709d54e65",
+    "outcomeIndex": 1,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x73ac4c1e5be0a89685328c9f5b833d828ffd62dfa07ceaf8536edbc43aa5f51e-0x88bad7977af1e18080a2a02e66e72a1af002b4e8c2090fc3cd0b24908ea758a6",
+    "outcomeIndex": 1,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x55c551896c10a74861f2fd88b4f928694310114704cc74b29b9760d1156cade6-0x7f847affbf0c0a4c71aa86d03f2a9b571207cc2b194eaae9978229593c7d41b9",
+    "outcomeIndex": 0,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x3120827dc12167d09fd9f08233e2b540054a2ed90aad65c023bc1da9d38b29d9-0xed43d5e91d0e30db33d95254f441b0e9b66eff1f36664d4a5602f020c3c6d931",
+    "outcomeIndex": 1,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x08f5fe8d0d29c08a96f0bc3dfb52f50e0caf470d94d133d95d38fa6c847e0925-0xf31b066a5f12c7e6aa5670b1a35bf92192927036ffa1b5431af493910d8b38b2",
+    "outcomeIndex": 1,
+    "balance": "85390765860367",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf-0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917-0x3011e4ede0f6befa0ad3f571001d3e1ffeef3d4af78c3112aaac90416e3a43e7",
+    "outcomeIndex": 0,
+    "balance": "21132666210444",
+    "avgBuyPrice": "0.5362444263465873058178138458056206",
+    "avgSellPrice": "0.5007653124164480838341886347923198",
+    "realizedPnL": "33440786873.30822547988727809666137",
+    "tradeCount": 12064,
+    "lastUpdated": "1729715193"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xea236b37f6ba053c48240dafea9b4b745ce43aebd44d8911df35302d1ac951a3-0xf98cd1a5aa9d96a4011fe9d1f31f8bfb182fe0d8a71d3aeae7c40ce4dd44fb68",
+    "outcomeIndex": 1,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xe721d257bb72949a6c61a77847b7880519a6164a8211e815da15eccd750c4626-0x818c5af0e9bb736c3a5a27859362d1109ce6f39eafeba4685c76c7826b1c8822",
+    "outcomeIndex": 0,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xd6f4c41fd20b8c6d5b48d528ead981d8fdf3da99d05018443e2d5bc60085e3dd-0x206a8ad2251444d2f030d0580dbe8f43066760781871af92b385565d4b71b264",
+    "outcomeIndex": 0,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xd28eff5dc23bc2520042f8722add1afc39cdc9ea00650262e75a5d3bafeed06b-0x5a82bbbff49c46050caa0bf12d79946bf1671f17f58c291d0949f4347b197803",
+    "outcomeIndex": 0,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x9e9071636d176562592a98dfede865385ba0cff7864cfa01f0479ca6e9e26e1b-0x78b180a0739f5d0ab2197589f4e6de0ba0d5f6a8d357516f7ff7091ef3f3900b",
+    "outcomeIndex": 0,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x9b277b355e9fff465381229667e064abb97ee74934af5e1a2278293f41e69708-0xf13e1720a015b488b2926ae072f0c1b6c828b0d7b9afe87e190600c26f392b36",
+    "outcomeIndex": 1,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x653483009043f1663360bc35ed8fb542d3f9453916082d20ff025adaa2fe7032-0xa35c7f7267003e4bde2a38e6a28d1931be3aedc7d63ea8e0ab8e153c920c069b",
+    "outcomeIndex": 1,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x3faf3dbf90050968deafdc980118910ebe8d2410a573bc265ba81fc4658c793b-0x447a05a3c14043dd7dfbf24fd694b52808deb89c47e3a2a7ec5754ad38673ba8",
+    "outcomeIndex": 0,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x2d606a51f902a4d934a4b810dd77cb28bb8e40268f42354057b5a47f9799efad-0xf6d32e4c978201f09eddf6391538e6fa84461812198eeb8164310246f8c6afc4",
+    "outcomeIndex": 0,
+    "balance": "19541051768388",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1722929826"
+  },
+  {
+    "id": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93-0xced9f9d90c94db9f1e1dbd7d9fba82fe4fa7431c0d4e91e28896c8ac2d6acadd-0x2a30cb0407f249a6f9191afb1c041a4b50ee89a40cea7ee2f6e65fdcfd51cb10",
+    "outcomeIndex": 0,
+    "balance": "16640082257788",
+    "avgBuyPrice": "0.001215713245514501820389429573079734",
+    "avgSellPrice": "0.001867672118552948901383214341303857",
+    "realizedPnL": "4314792415.986970874937836452547098",
+    "tradeCount": 33846,
+    "lastUpdated": "1729738522"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xf75076205d589c02ac13263b0d59041563695a7518d65134f8eb8c61dda22262-0x457ab8c7a27bfd67a26697b264d785c5aa45f11ee6a098510104bff0cb097b7f",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xf488aacaba74914fe181c68d8b6195e13c4ec8b6c1b215c299d297666297200e-0xa776928a1c2f7d4d4ee71c45c667e1f91b5e58d535eb223bd8df072b5869a7cf",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xf3a7a2365b6ec113117184bb2d1b020577355a1028fde0b32671c4cfbbbbd589-0x9f400f5eae9852bf9dc987963afa46964cbc3ccd10bed95ec9bfbfe09c751e73",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xcd1b6b71a1964f15e2c14809594cbfa0d576270e8ef94c8c24913121097e09e5-0x7464aaaf13152dc50bd22519e4a432696310faac75fdacd79fbed3c11d88c7e5",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xb80a8a4ecb9344bfe81bb620638fa2882b5f57663bbe268c4bb2b97ece7717b9-0x993e538ed6612a295c249646c5b67a215587992b751651274ff21fb2c5c43c54",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xb26fd99a7b7bae4e13c9bb3becf65353708a805f9c1aea74484d107e6ba512cd-0xa475b197680d5ca22626be01be850754b7102b998d8f91899cab2c452b26554a",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x6d617a838210e0710a2a946814d1f26ed6bd3ffb76d0ef49959e0d2f75556944-0x57da0369d8101ac6f2fe7358d8c26602522c296bf63bac2041e676fd65dd6b12",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x534da3946b8da84a8687e346e735fcc1d7c7078c057b1a7769cb9991b3e67968-0x32bfe1e86d7fc4bae10d547d697bbfb598e6e7c1f1fd282719ca60ad4ba2bea1",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x4eb8e44c37e307a2125f400b675e98861d091f9e50f5be07a25304c930cf85aa-0x49d99cc03305ef0e73ffb8d0fd9fb6b9f4754073011526d1701bea16c6367953",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x37658cacdccbb4d2d6dd4cae8cfd43b268e695aab51973a70be339f1b90d9a94-0x83bd92a11ce58290fdfaac8eaae6eb327a731cca73bb76e95c7c41c814a19e9c",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x34b8fa269775d034f3d98b6848e0a7c5212efcaa0c98e6f8fb54c5d6f72b3705-0xabd09a937517e107787aba0aea132a6a9f43970d501a408f783130c39335b6fe",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x265366ede72d73e137b2b9095a6cdc9be6149290caa295738a95e3d881ad0865-0x610d65fbc4866e9791276e301da653ec7fc126af38f7515cc1e0e296b4a59d24",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x21dacbae08cd922e9fe1e5f3a4b2ea09820d36f2ed368d6b53683b0fc1f16fe1-0x90467887c3cb2504758852d276b2c15892d2d782e082bbd15ff7584726c2320c",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x215625b9e962f3f499f832c77dd4caa400bd8435369b5fd65e8673c8b2c4da66-0x918e2a955175505000ecd255c4ece4cb19b257e572a4bd42f1c03c8222f9088b",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x198d833c085ed0c858165192e9fd446c5392dbcdedd1132d89c578c0b5c29b2f-0x34273eff3c9b66637d2b18dd209e55ddbe07f9acb0f2ddeedfea949f5202d7f",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x0c12d7b5322f432a0c4ac8806b476c7483c4d44061ca1188b6f749ec9db34996-0x236e8d8f98f277ec79b90b335c4c77523cd56902277f80804547b0e6b0b7fa9",
+    "outcomeIndex": 0,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x037c9d29c04a2f6a5373ae7db7779cb40a751ca372de1e55999397a8f571c67e-0xed2bbc174d151ff472f0a6208a2353722ad1e8510ef83500b8cc7cfe5d973d2e",
+    "outcomeIndex": 1,
+    "balance": "16223236188318",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729741900"
+  },
+  {
+    "id": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93-0x7da35195ac3c7bf167f88ab0c27067a99020e36de67d39968b71d9debcdd925e-0xa708dad01a259227ad992ceba1c653bef1ae09ee1d650629c88f5413ee3b0f5f",
+    "outcomeIndex": 1,
+    "balance": "15621067361896",
+    "avgBuyPrice": "0.001213471910067923959679104948460921",
+    "avgSellPrice": "0.001976898753051242923239245085728691",
+    "realizedPnL": "-3371014027.7567124827591232162095086",
+    "tradeCount": 32480,
+    "lastUpdated": "1729739122"
+  },
+  {
+    "id": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf-0xad6d309aaa500d96855996e84da00dfb2379548a693ca684d0877cf94fec05d1-0x78959fcfd2b4c144984982a3f06b82dc3b4a764904d2979fbafba7670d8c9f20",
+    "outcomeIndex": 1,
+    "balance": "14460316132000",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 1442,
+    "lastUpdated": "1724277631"
+  },
+  {
+    "id": "0x32cf8efc13583788ed0bbaeb4dccaccaa846b8d3-0x63634b4e14297a748923f86dca4fa0c6c659db0f5fadeeb8e419e48e20759c34-0xaf5ba8201c484af686d93c4b9b6874d3a4936d6f2373f0d5d99ec6633995f0c3",
+    "outcomeIndex": 0,
+    "balance": "13783446802233",
+    "avgBuyPrice": "0.001213977199435986369103730826106534",
+    "avgSellPrice": "0.002378342612146931778668880315188343",
+    "realizedPnL": "-274564331.99632368856901508028077902",
+    "tradeCount": 3192,
+    "lastUpdated": "1728510340"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x73ac4c1e5be0a89685328c9f5b833d828ffd62dfa07ceaf8536edbc43aa5f51e-0x6ac0757b31ae4571cd1c6230332258baaf428e91d7d502b58e287a6235acf91a",
+    "outcomeIndex": 0,
+    "balance": "13766260700000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "38311570",
+    "tradeCount": 46,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x08f5fe8d0d29c08a96f0bc3dfb52f50e0caf470d94d133d95d38fa6c847e0925-0xd25100b789bedf5e935ec6ef05b6e201928f08aca5f672f3b099f061783f6557",
+    "outcomeIndex": 0,
+    "balance": "13398562930000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "406009340",
+    "tradeCount": 594,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0xf6106065ec5d5dae7eca350be64e5246ae331b35937ea55b64152f65fbc0b37f-0x3c628d22edc734e63538c51bb87d92f31fa8a4045bee58013dccf74b8e354d84",
+    "outcomeIndex": 0,
+    "balance": "13166676200000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "647606960",
+    "tradeCount": 816,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0xd1cce1f51effdf3957144fdc87b5e8aace1d1f7ab21976a046b71744ecad8443-0xdcac330429947110505cf52e4ce92b37457f4158f09aa7283063c28c5a1cd5c",
+    "outcomeIndex": 0,
+    "balance": "13077192440000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "737090720",
+    "tradeCount": 702,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x3120827dc12167d09fd9f08233e2b540054a2ed90aad65c023bc1da9d38b29d9-0xd5239fbde75cc5c8223b712905947c084e8949822947c281384d08d85380f05",
+    "outcomeIndex": 0,
+    "balance": "12806093860000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "1001673370",
+    "tradeCount": 828,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0x56687bf447db6ffa42ffe2204a05edaa20f55839-0xcd1b6b71a1964f15e2c14809594cbfa0d576270e8ef94c8c24913121097e09e5-0x5e66d2bd3502be046c4c52fedbb9ada4222968d23d98409aaedbcd9467090910",
+    "outcomeIndex": 0,
+    "balance": "12549408098655",
+    "avgBuyPrice": "0.3659932621493762787559654157869164",
+    "avgSellPrice": "0.3580029151724293479486658998127974",
+    "realizedPnL": "10883199.49642897309769718338834657",
+    "tradeCount": 6155,
+    "lastUpdated": "1729711303"
+  },
+  {
+    "id": "0x56687bf447db6ffa42ffe2204a05edaa20f55839-0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917-0x3011e4ede0f6befa0ad3f571001d3e1ffeef3d4af78c3112aaac90416e3a43e7",
+    "outcomeIndex": 0,
+    "balance": "12305765652470",
+    "avgBuyPrice": "0.5963250791493420387458379129431978",
+    "avgSellPrice": "0.6046619772077509355625211580724944",
+    "realizedPnL": "1135998709.474606072619690164306117",
+    "tradeCount": 7545,
+    "lastUpdated": "1729711153"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0x73ac4c1e5be0a89685328c9f5b833d828ffd62dfa07ceaf8536edbc43aa5f51e-0x6ac0757b31ae4571cd1c6230332258baaf428e91d7d502b58e287a6235acf91a",
+    "outcomeIndex": 0,
+    "balance": "12132568443826",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 2,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0xf6106065ec5d5dae7eca350be64e5246ae331b35937ea55b64152f65fbc0b37f-0x3c628d22edc734e63538c51bb87d92f31fa8a4045bee58013dccf74b8e354d84",
+    "outcomeIndex": 0,
+    "balance": "12131568443826",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0xd1cce1f51effdf3957144fdc87b5e8aace1d1f7ab21976a046b71744ecad8443-0xdcac330429947110505cf52e4ce92b37457f4158f09aa7283063c28c5a1cd5c",
+    "outcomeIndex": 0,
+    "balance": "12131568443826",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0x696baf880832d000a37ea87cc94235b1ac58e7e9fe7a144ccf5d141877629134-0x9d3b7506c1f365bfa1da6d6932a3debfa50d1e938657b6a484022192c3e36fdb",
+    "outcomeIndex": 0,
+    "balance": "12131568443826",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0x3120827dc12167d09fd9f08233e2b540054a2ed90aad65c023bc1da9d38b29d9-0xd5239fbde75cc5c8223b712905947c084e8949822947c281384d08d85380f05",
+    "outcomeIndex": 0,
+    "balance": "12131568443826",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0x08f5fe8d0d29c08a96f0bc3dfb52f50e0caf470d94d133d95d38fa6c847e0925-0xd25100b789bedf5e935ec6ef05b6e201928f08aca5f672f3b099f061783f6557",
+    "outcomeIndex": 0,
+    "balance": "12131568443826",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x696baf880832d000a37ea87cc94235b1ac58e7e9fe7a144ccf5d141877629134-0x9d3b7506c1f365bfa1da6d6932a3debfa50d1e938657b6a484022192c3e36fdb",
+    "outcomeIndex": 0,
+    "balance": "11901887500000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "1902684770",
+    "tradeCount": 1067,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0x40bbdd26dc08406eedcb913efee7f7faddf50e16fc21caedb4972d57fd71e0d1-0xdb516829f8dfbf806a8ea4f678e9356d3b79b01d3d50001783032c9d7a7fd7cf",
+    "outcomeIndex": 1,
+    "balance": "10924635090091",
+    "avgBuyPrice": "0.05097276847763551181105143632197499",
+    "avgSellPrice": "0.001134051656034580295827269145101631",
+    "realizedPnL": "-80450942809.02677674943631521294437",
+    "tradeCount": 534,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0x93b33614739613d8faba18b027da20d5074b6436-0x230144e34a84dfd0ebdc6de7fde37780e28154f6f84dd8880c7f0e58d302d448-0xd793d4374dc4546a3e5df1c19a1248b0fae6b5c92623b289d8825bd32f38f2a3",
+    "outcomeIndex": 0,
+    "balance": "10549017640160",
+    "avgBuyPrice": "0.007503760812143857053574896485514136",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 2090,
+    "lastUpdated": "1728440527"
+  },
+  {
+    "id": "0x6fa718cf10811fcca5a3f2e0189911405967320a-0x14018049e265a2d88f284be9588e2e3542e3a3df08ccdb344d28355dd7fdd8ef-0xc29dfdd91a735ac8e7362908f84eb014e2658bc1315eb375e0a6494bee2942e1",
+    "outcomeIndex": 1,
+    "balance": "10176030000000",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 1471,
+    "lastUpdated": "1729258688"
+  },
+  {
+    "id": "0x6fa718cf10811fcca5a3f2e0189911405967320a-0x63634b4e14297a748923f86dca4fa0c6c659db0f5fadeeb8e419e48e20759c34-0xaf5ba8201c484af686d93c4b9b6874d3a4936d6f2373f0d5d99ec6633995f0c3",
+    "outcomeIndex": 0,
+    "balance": "10064737594334",
+    "avgBuyPrice": "0.002940855543155710350563122363775461",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 2537,
+    "lastUpdated": "1729046576"
+  },
+  {
+    "id": "0x30b883a0987bee38bdd7bfa0c1ebd4080fe4e991-0x55c551896c10a74861f2fd88b4f928694310114704cc74b29b9760d1156cade6-0xc269e5fae3aa954133e02bc22986e38c45d383120bab6b798e1ddafff3c4a8eb",
+    "outcomeIndex": 1,
+    "balance": "9999999997254",
+    "avgBuyPrice": "0.003036455002029025748996327105396035",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 2055,
+    "lastUpdated": "1729704423"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x73ac4c1e5be0a89685328c9f5b833d828ffd62dfa07ceaf8536edbc43aa5f51e-0x6ac0757b31ae4571cd1c6230332258baaf428e91d7d502b58e287a6235acf91a",
+    "outcomeIndex": 0,
+    "balance": "9924071030000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "38548000",
+    "tradeCount": 29,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x9d333d3122c0e38de533b2e59343a92df9e1fa02-0x55c551896c10a74861f2fd88b4f928694310114704cc74b29b9760d1156cade6-0xc269e5fae3aa954133e02bc22986e38c45d383120bab6b798e1ddafff3c4a8eb",
+    "outcomeIndex": 1,
+    "balance": "9828851090000",
+    "avgBuyPrice": "0.003050497896394951004741006898263961",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 59,
+    "lastUpdated": "1728850642"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0x73ac4c1e5be0a89685328c9f5b833d828ffd62dfa07ceaf8536edbc43aa5f51e-0x6ac0757b31ae4571cd1c6230332258baaf428e91d7d502b58e287a6235acf91a",
+    "outcomeIndex": 0,
+    "balance": "9758864572250",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "9884680",
+    "tradeCount": 13,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0x08f5fe8d0d29c08a96f0bc3dfb52f50e0caf470d94d133d95d38fa6c847e0925-0xd25100b789bedf5e935ec6ef05b6e201928f08aca5f672f3b099f061783f6557",
+    "outcomeIndex": 0,
+    "balance": "9758854572250",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "9884680",
+    "tradeCount": 9,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0xd1cce1f51effdf3957144fdc87b5e8aace1d1f7ab21976a046b71744ecad8443-0xdcac330429947110505cf52e4ce92b37457f4158f09aa7283063c28c5a1cd5c",
+    "outcomeIndex": 0,
+    "balance": "9754176389719",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "14560852",
+    "tradeCount": 36,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0xf6106065ec5d5dae7eca350be64e5246ae331b35937ea55b64152f65fbc0b37f-0x3c628d22edc734e63538c51bb87d92f31fa8a4045bee58013dccf74b8e354d84",
+    "outcomeIndex": 0,
+    "balance": "9753763732250",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "14973680",
+    "tradeCount": 40,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0x3120827dc12167d09fd9f08233e2b540054a2ed90aad65c023bc1da9d38b29d9-0xd5239fbde75cc5c8223b712905947c084e8949822947c281384d08d85380f05",
+    "outcomeIndex": 0,
+    "balance": "9715579491719",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "48581680",
+    "tradeCount": 243,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x08f5fe8d0d29c08a96f0bc3dfb52f50e0caf470d94d133d95d38fa6c847e0925-0xd25100b789bedf5e935ec6ef05b6e201928f08aca5f672f3b099f061783f6557",
+    "outcomeIndex": 0,
+    "balance": "9709698000000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "252921030",
+    "tradeCount": 94,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0xd1cce1f51effdf3957144fdc87b5e8aace1d1f7ab21976a046b71744ecad8443-0xdcac330429947110505cf52e4ce92b37457f4158f09aa7283063c28c5a1cd5c",
+    "outcomeIndex": 0,
+    "balance": "9680057000000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "301065280",
+    "tradeCount": 145,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0x696baf880832d000a37ea87cc94235b1ac58e7e9fe7a144ccf5d141877629134-0x9d3b7506c1f365bfa1da6d6932a3debfa50d1e938657b6a484022192c3e36fdb",
+    "outcomeIndex": 0,
+    "balance": "9633578371719",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "132460180",
+    "tradeCount": 24,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x14018049e265a2d88f284be9588e2e3542e3a3df08ccdb344d28355dd7fdd8ef-0xc29dfdd91a735ac8e7362908f84eb014e2658bc1315eb375e0a6494bee2942e1",
+    "outcomeIndex": 1,
+    "balance": "9599633883692",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.03669599321552343742352351108502914",
+    "realizedPnL": "172893047867",
+    "tradeCount": 2350,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0xf6106065ec5d5dae7eca350be64e5246ae331b35937ea55b64152f65fbc0b37f-0x3c628d22edc734e63538c51bb87d92f31fa8a4045bee58013dccf74b8e354d84",
+    "outcomeIndex": 0,
+    "balance": "9565904000000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "416280030",
+    "tradeCount": 379,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x3120827dc12167d09fd9f08233e2b540054a2ed90aad65c023bc1da9d38b29d9-0xd5239fbde75cc5c8223b712905947c084e8949822947c281384d08d85380f05",
+    "outcomeIndex": 0,
+    "balance": "9565904000000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "405816090",
+    "tradeCount": 60,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x40bbdd26dc08406eedcb913efee7f7faddf50e16fc21caedb4972d57fd71e0d1-0xdb516829f8dfbf806a8ea4f678e9356d3b79b01d3d50001783032c9d7a7fd7cf",
+    "outcomeIndex": 1,
+    "balance": "9516894680003",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.004592692307809112697665124036422335",
+    "realizedPnL": "29577543228",
+    "tradeCount": 2671,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x696baf880832d000a37ea87cc94235b1ac58e7e9fe7a144ccf5d141877629134-0x9d3b7506c1f365bfa1da6d6932a3debfa50d1e938657b6a484022192c3e36fdb",
+    "outcomeIndex": 0,
+    "balance": "9225470000000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "737149030",
+    "tradeCount": 80,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0xad6d309aaa500d96855996e84da00dfb2379548a693ca684d0877cf94fec05d1-0x78959fcfd2b4c144984982a3f06b82dc3b4a764904d2979fbafba7670d8c9f20",
+    "outcomeIndex": 1,
+    "balance": "8783563070000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001006532418275043989015605981841241",
+    "realizedPnL": "5477080970",
+    "tradeCount": 2692,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0x22106f4035f53502f358131070c5faab47138812-0x230144e34a84dfd0ebdc6de7fde37780e28154f6f84dd8880c7f0e58d302d448-0xd793d4374dc4546a3e5df1c19a1248b0fae6b5c92623b289d8825bd32f38f2a3",
+    "outcomeIndex": 0,
+    "balance": "8349690000000",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 76,
+    "lastUpdated": "1729399933"
+  },
+  {
+    "id": "0xf75b1644d510f9ca5e6d7d6624a500a4eb362980-0x55c551896c10a74861f2fd88b4f928694310114704cc74b29b9760d1156cade6-0xc269e5fae3aa954133e02bc22986e38c45d383120bab6b798e1ddafff3c4a8eb",
+    "outcomeIndex": 1,
+    "balance": "8342323296360",
+    "avgBuyPrice": "0.003665158018486213102087328081757425",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 2151,
+    "lastUpdated": "1729090883"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x40bbdd26dc08406eedcb913efee7f7faddf50e16fc21caedb4972d57fd71e0d1-0xdb516829f8dfbf806a8ea4f678e9356d3b79b01d3d50001783032c9d7a7fd7cf",
+    "outcomeIndex": 1,
+    "balance": "8293616009695",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.006902839894205066896149233499024244",
+    "realizedPnL": "17772582146",
+    "tradeCount": 2540,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xd235973291b2b75ff4070e9c0b01728c520b0f29-0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917-0x3011e4ede0f6befa0ad3f571001d3e1ffeef3d4af78c3112aaac90416e3a43e7",
+    "outcomeIndex": 0,
+    "balance": "8203634635312",
+    "avgBuyPrice": "0.6316649311711961990244548823849495",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 5072,
+    "lastUpdated": "1729741388"
+  },
+  {
+    "id": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029-0x14018049e265a2d88f284be9588e2e3542e3a3df08ccdb344d28355dd7fdd8ef-0xc29dfdd91a735ac8e7362908f84eb014e2658bc1315eb375e0a6494bee2942e1",
+    "outcomeIndex": 1,
+    "balance": "8059979763826",
+    "avgBuyPrice": "0.001",
+    "avgSellPrice": "0.001",
+    "realizedPnL": "0",
+    "tradeCount": 211,
+    "lastUpdated": "1729738876"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0xb20072387cd12bc73f3a6fd30fdd5aa1644c8f72f958803d90fc05c51db0ac49-0x4a14d5c32f7ef3c94b47064a6519b5e218cb20c1c549d4bfd658b24cd889b3b4",
+    "outcomeIndex": 1,
+    "balance": "8031592399372",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1726697506"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x70357debf15a956d82d8b2022aaf5f868763d1d0716d2c6e5ce35712e49a3b0f-0x97d258cf92f979cd8d27a00327a1e87c9a5c549c86b88c5489fe4a4ba6f8ef1a",
+    "outcomeIndex": 1,
+    "balance": "8031592399372",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1726697506"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x6cc501fa617e3a46ececf6e3990fe1afeeaa6bc897d3c7049c005fd1bdc42c2f-0x145f02e4da4159666b12f58c4986f768fb1d9ba8bc43f831fc76966e1755606c",
+    "outcomeIndex": 1,
+    "balance": "8031592399372",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1726697506"
+  },
+  {
+    "id": "0xa5ef39c3d3e10d0b270233af41cac69796b12966-0x0a533c938200a10df86423dfbe621a2f36bfd4abc457615cf4992ed721c566bf-0x32cb92c58c0fdd95946435661b5dd2cb478cf489dff55be3357e48e92e77e7be",
+    "outcomeIndex": 1,
+    "balance": "8031592399372",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0",
+    "realizedPnL": "0",
+    "tradeCount": 0,
+    "lastUpdated": "1726697506"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x14018049e265a2d88f284be9588e2e3542e3a3df08ccdb344d28355dd7fdd8ef-0xc29dfdd91a735ac8e7362908f84eb014e2658bc1315eb375e0a6494bee2942e1",
+    "outcomeIndex": 1,
+    "balance": "7916964006143",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.04403940118135677993375435578910823",
+    "realizedPnL": "105061785952",
+    "tradeCount": 1389,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x59ee6c6a56d7b00223f0c30f8002c4df762b684d-0x40bbdd26dc08406eedcb913efee7f7faddf50e16fc21caedb4972d57fd71e0d1-0xdb516829f8dfbf806a8ea4f678e9356d3b79b01d3d50001783032c9d7a7fd7cf",
+    "outcomeIndex": 1,
+    "balance": "7342942794944",
+    "avgBuyPrice": "0.003",
+    "avgSellPrice": "0.003151708321149569454226978147156896",
+    "realizedPnL": "4868501470",
+    "tradeCount": 1635,
+    "lastUpdated": "1729738918"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0xad6d309aaa500d96855996e84da00dfb2379548a693ca684d0877cf94fec05d1-0x78959fcfd2b4c144984982a3f06b82dc3b4a764904d2979fbafba7670d8c9f20",
+    "outcomeIndex": 1,
+    "balance": "7122918000000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001024844940568454514484869722935294",
+    "realizedPnL": "3298568990",
+    "tradeCount": 975,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0x63634b4e14297a748923f86dca4fa0c6c659db0f5fadeeb8e419e48e20759c34-0xaf5ba8201c484af686d93c4b9b6874d3a4936d6f2373f0d5d99ec6633995f0c3",
+    "outcomeIndex": 0,
+    "balance": "7084056710000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001664240676396240915809697238071788",
+    "realizedPnL": "7454044520",
+    "tradeCount": 3594,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93-0x230144e34a84dfd0ebdc6de7fde37780e28154f6f84dd8880c7f0e58d302d448-0xd793d4374dc4546a3e5df1c19a1248b0fae6b5c92623b289d8825bd32f38f2a3",
+    "outcomeIndex": 0,
+    "balance": "7071818928391",
+    "avgBuyPrice": "0.00148696218353825978074042101623704",
+    "avgSellPrice": "0.002576585438698223095304564969391568",
+    "realizedPnL": "12393165078.87275789322382412298867",
+    "tradeCount": 45959,
+    "lastUpdated": "1729741866"
+  },
+  {
+    "id": "0x4ce73141dbfce41e65db3723e31059a730f0abad-0x63634b4e14297a748923f86dca4fa0c6c659db0f5fadeeb8e419e48e20759c34-0xaf5ba8201c484af686d93c4b9b6874d3a4936d6f2373f0d5d99ec6633995f0c3",
+    "outcomeIndex": 0,
+    "balance": "7060237820000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001848867476147307955530384548942752",
+    "realizedPnL": "22969992660",
+    "tradeCount": 4292,
+    "lastUpdated": "1729687932"
+  },
+  {
+    "id": "0xc23b2190e56399fae83048dea976e13d83cd24f9-0xced9f9d90c94db9f1e1dbd7d9fba82fe4fa7431c0d4e91e28896c8ac2d6acadd-0x2a30cb0407f249a6f9191afb1c041a4b50ee89a40cea7ee2f6e65fdcfd51cb10",
+    "outcomeIndex": 0,
+    "balance": "6987559480000",
+    "avgBuyPrice": "0",
+    "avgSellPrice": "0.001305893899673085649759969541610456",
+    "realizedPnL": "6922032370",
+    "tradeCount": 4408,
+    "lastUpdated": "1729740330"
+  },
+  {
+    "id": "0x8119010a6e589062aa03583bb3f39ca632d9f887-0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917-0x3011e4ede0f6befa0ad3f571001d3e1ffeef3d4af78c3112aaac90416e3a43e7",
+    "outcomeIndex": 0,
+    "balance": "6973830377626",
+    "avgBuyPrice": "0.5255403222668589852289519904741276",
+    "avgSellPrice": "0.5023982101025990559635010174424812",
+    "realizedPnL": "19669980885.71847245821267226869499",
+    "tradeCount": 2810,
+    "lastUpdated": "1729192724"
+  }
+]
